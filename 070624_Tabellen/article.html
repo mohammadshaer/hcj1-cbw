@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<!-- HTML ist hierarchisch aufgebaut -->
+<html> <!-- Hypertext Markup Language, ist ein XML-Dialekt -->
+    <!-- Browser liest HTML aus und stellt es dar-->
+    <head>
+  
+        <meta name="keywords" content="Test, Entwicklung, HTML, CBW">
+        <meta name="description" content="Hier ist eine Beschreibung meiner Webseite">
+        <meta name="author" content="Matthias Hofmann">
+        <meta charset="UTF-8">
+        <title> Mein EM-Blog</title>
+        <link rel="icon" type="image/svg+xml" href="http://localhost/hcj1_web/img/football.svg">
+        
+        <!-- Nachteil bisheriger Ansätze: 
+        Redundanzen (Wiederholungen) von Anweisungen
+        Bei geänderten Anforderungen (z.B. Schrift soll einen anderen Stil bekommen),
+        müsst ihr in JEDER Datei die Änderung vornehmen oder im Zweifel auf Ebene jeden Elements  -->
+
+       <!-- CSS als externe Ressource einbinden -->
+       <link rel="stylesheet" type="text/css" href="css/article.css">
+       
+    </head>
+
+    <body>
+
+        <!-- Verschiedene Elemente, z.B. für die Erstellung von Artikeln,
+        können in eine logische, übergeordnete Einheit zusammengefasst werden. -->
+        <!-- Vorteile: Wiederholung derselben Strukturen,
+            Übersichtlichkeit, Information für die Suchmaschine
+        innerhalb eines Blocks einheitlich stylen -->
+    <!-- Alternative: div -->
+     <div id="article"></div>
+     <!-- 1 section repräsentiert inhaltliche Bereiche der Webseite
+      Hier kann man u.a. articles einbinden
+      Für einfachere Navigation in dem Dokument
+      und flexibleres Styling und SEO -->
+    <section>
+        <article>
+            <h1> Start der Fußball-EM a 14.06.</h1>
+            <!-- Styles auf Element-Ebene einbinden -->
+             <p> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. </p>
+             <p> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. </p>
+         </article>
+    </section>
+
+
+    </body>
+
+
+
+
+</html>
+

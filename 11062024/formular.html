@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<!-- HTML ist hierarchisch aufgebaut -->
+<html> <!-- Hypertext Markup Language, ist ein XML-Dialekt -->
+    <!-- Browser liest HTML aus und stellt es dar-->
+    <head>
+  
+        <meta name="keywords" content="Test, Entwicklung, HTML, CBW">
+        <meta name="description" content="Hier ist eine Beschreibung meiner Webseite">
+        <meta name="author" content="Matthias Hofmann">
+        <meta charset="UTF-8">
+        <title> Formular</title>
+        <link rel="icon" type="image/svg+xml" href="http://localhost/hcj1_web/img/football.svg">
+        
+        <!-- Nachteil bisheriger Ansätze: 
+        Redundanzen (Wiederholungen) von Anweisungen
+        Bei geänderten Anforderungen (z.B. Schrift soll einen anderen Stil bekommen),
+        müsst ihr in JEDER Datei die Änderung vornehmen oder im Zweifel auf Ebene jeden Elements  -->
+
+       <!-- CSS als externe Ressource einbinden -->
+       <link rel="stylesheet" type="text/css" href="css/article.css">
+       
+    </head>
+
+    <body>
+
+      
+    <section>
+        <!-- Interaktion mit dem Server, Login, Bestellungen, Feedback, ... -->
+         <!-- Nutzereingaben -->
+        <article>
+            <h1> Einfaches Textfeld</h1>
+            <!-- Styles auf Element-Ebene einbinden -->
+             <p> Textfelder werden mit dem input type realisiert.
+                Das Attribute type ermöglicht eine Auswahl von vorkonfigurierten Textfeldern, name ist ein Bezeichner für die Verarbeitung auf dem Server,
+            size gibt die Breite des Textfeldes an und maxlength die Anzahl der Zeichen, die eingegeben werden können.  </p>
+            <p> Labels beschriften Eingabefelder und erhöhen die User-experience. 
+                Verbesserung von Zugänglichkeit, Gestaltungsmöglichkeiten für Interaktionsdesign, differenzierte Formatierung, ...
+            </p>
+             <!-- Formulare werden in einem form-Tag ummantelt. 
+              So sind zusammengehörige UI-Elemente für Formulare
+              zu gruppieren. -->
+              <!-- Konsitenz von maxlength zu einer Datenbank, die
+               im Backend existiert. -->
+               <!-- Plausibilitätsprüfung. -->
+              <form>
+                <label for="vn">Vorname: </label>
+                <input id="vn" type="text" placeholder="Bitte Vornamen eingeben" 
+                    name="vorname" size="15" maxlength="20">
+                <br>
+                <label for="gehalt">Gehalt: </label>
+                <input id="gehalt" type="number" placeholder="Gehalt" 
+                    name="gehalt" size="15" max="10000">
+                <br>
+                <label for="mail">Mail: </label>
+                <input id="mail" type="email" placeholder="Mail" 
+                    name="email" size="15" maxlength="20">
+                <br>
+                <label for="date">Datum: </label>
+                <input id="date" type="datetime-local" placeholder="Datum" 
+                    name="date" size="0" maxlength="10">
+
+                <button>Ein Button </button>
+              </form>
+         </article>
+    </section>
+
+
+    </body>
+
+
+
+
+</html>
+

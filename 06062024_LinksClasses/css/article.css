@@ -1,0 +1,30 @@
+article {
+    background-color: lightgray;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /* Warum ändern wir hier lieber nichtd ie Schriftgröße? */
+    font-size: 15px;
+}
+
+h1 {
+    background-color: lightblue;
+    font-size: 22px;
+}
+
+p {
+    text-align: justify;
+}
+
+a {
+    text-decoration: none;
+    font-size: 15px;
+    color: brown;
+}
+
+.links {
+    color: red;
+}
+
+/* Alle a unter einem div */ 
+div > a {
+
+}

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<!-- Kommentar für andere Entwickler -->
+<!-- HTML: Struktur und Inhalt einer Webseite -->
+<!-- CSS: Formatierung und das Design von Webseiten, ermöglicht es, 
+zusätzliche Eigenschaften für die Strukturelemente zu vergeben. 
+Zum Beispiel: Farben, Größen, Abstandsformatierungen, Schriftarten, Ränder,
+Elemente für responsives Webdesign, u.v.m. -->
+ <!-- JS: Ermöglicht die Implementierung einer "dynamischen" Webseite. 
+"Logik" einer Webseite: Beispiel Produktliste => Detailansicht
+Nachladen ohne Verzögerung / Anfrage an den Server
+JavaScript ist eine Programmiersprache, die auf dem Client im Broswer
+ausgeführt wird. Laufzeitumgebung ist der Browser -->
+<!-- REACT: Eine JS-Bibliothek. Dynamische Webseiten erstellen, UI Elemente, vereinfachte
+    Datenverarbeiten für DOM. 
+Bibliothek: Code, der von anderen Entwicklern bereitgestellt wurde und
+zusätzliche FUnktionalitäten bereitstellt, z.B. UI-Elemente, 
+Zugriff auf Daten, ... -->
+<!-- PHP: Serverseitige Programmiersprache, verarbeitet Daten auf dem Server.
+Ausführung von Dateien mit der .php Endung.
+Nutzen als RESTful API, Verarbeitung von Formulardaten, etc. -->
+
+<!-- HTML ist hierarchisch aufgebaut -->
+<html> <!-- Hypertext Markup Language, ist ein XML-Dialekt -->
+    <!-- Browser liest HTML aus und stellt es dar-->
+    <head>
+        <!-- Angaben zum Titel -->
+        <!-- Definition des Favicon -->
+        <!-- Meta-Informationen: Zeichenkodierung, Schlüsselworte zur Beschreibung
+        der Webseite, Textuelle Beschreibung der Webseite, Hinterlegen von Informationen 
+        für den Web-Browser -->
+        <!-- name= ist ein sog. Attribut eines HTML Tags-->
+        <!-- HTML-Befehle heißen Tag -->
+        <!-- Werte zu einem Attribut werden als sog. Literal angegeben. -->
+        <meta name="keywords" content="Test, Entwicklung, HTML, CBW">
+        <meta name="description" content="Hier ist eine Beschreibung meiner Webseite">
+        <meta name="author" content="Matthias Hofmann">
+        <meta charset="UTF-8">
+        <!-- Einen Titel -->
+        <title> Mein EM-Blog</title>
+        <!-- externe Quellen reinlinken -->
+        <!-- relativer Pfad -->
+        <!--<link rel="icon" type="image/svg+xml" href="img/football.svg">-->
+        <!-- localhost ist der lokal betriebene Server -->
+        <!--<link rel="icon" type="image/svg+xml" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrJeOw2EP16YSIi1eRsXNdW1o4Qi1O4mXbNg&">-->
+        <link rel="icon" type="image/svg+xml" href="http://localhost/hcj1_web/img/football.svg">
+        
+    </head>
+
+    <body>
+        <!-- Hier kommt der eigentliche Inhalt einer Webseite hin -->
+        <!-- Wir sehen das hier im Browser, Überschriften, Tabellen, u.v.m. -->
+        <!-- Überschrift der höchsten Ebene -->
+        <!-- 6 verschiedene Tiefenebenen für Überschriften -->
+        <!-- von h1 bis h6 -->
+        <!-- Formatierung ist HTML-Standard im Default -->
+        <!-- alles über CSS - Formatierungen einstellbar -->
+        <h1>Deutschland wird Europameister</h1>
+        <h2>Gegen England im Finale</h2>
+        <h3>Berlin wurde zum Hexenkessel</h3>
+        <h4>Toni Kroos gibt sein Abschiedsspiel</h4>
+        <h5>Die Sonne stand heute tief</h5>
+        <h6>Spielerfrauen sind erfreut</h6>
+        
+        <p>In einem packenden <b>Finale</b> besiegt Deutschland England mit 2:0. </p>
+
+        <!-- Bild einbinden, Tag wird mit /> geschlossen. -->
+        <img src="img/football.svg" />
+
+        <!-- Alternative Beschreibung festlegen. Gründe: Verbindingsqualität, 
+            SEO, Barrierefreiheit -->
+        <img src="img/football.svg" alt="Das ist ein Fußball. "/>
+
+        <!-- Größen von Bildern können eingestellt werden -->
+        <img src="img/football.svg" width="300" height="300" title="Wir freuen uns auf die EM"/>
+
+        <!-- Die Einstellung der Größen als Stylesheet (bevorzugt)-->
+        <!-- Mit style lege ich Formatierungsoptionen für meine HTML-Tags fest-->
+        <!-- Nur lokal für dieses Element gültig-->
+        <img src="img/football.svg" title="Wir freuen uns auf die EM" style="width: 250px; height: 250px;"/>
+
+
+        <img src="img/football.svg" srcset="bild-320w.jpg 320w, bild-480w.jpg 480w, bild-800w.jpg 800w"
+        sizes="(max-width: 320px) 280px, (max-width: 480px) 440px, 800px" alt="Adaptives Bild">
+
+        <aside>
+            <h3>Partner-Websites</h3>
+            <ul>
+                <li><a href="#">Website 1</a></li>
+                <li><a href="#">Website 2</a></li>
+                <li><a href="#">Website 3</a></li>
+            </ul>
+        </aside>
+
+    </body>
+</html>
+

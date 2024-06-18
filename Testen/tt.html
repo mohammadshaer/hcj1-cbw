@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h4>Antrag auf Erteilung der einer einfachen Melderegisterausskunft nach § 44 Bundesmeldegesetz</h4>
+    <p>Ich beantrage eine Auskunft aus dem Melderegister für folgende Person:</p>
+    <table border="">
+        <tr>
+            <td>
+                <form>
+                    <label for="name">Vame</label><br>
+                    <input type="text" id="name" size="40"style="background-color: rgb(129, 208, 233);" >
+                </form>
+            </td>
+            <td colspan="2">
+                <form >
+                    <label for="voename(n)">Vorname(n)</label><br>
+                    <input type="text" id="voename(n)" size="66" style="background-color: rgb(129, 208, 233);">
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td rowspan="2">
+                <form>
+                    <label for="früherer Name (ggf. Geburtsname)">früherer Name (ggf. Geburtsname)</label><br>
+                    <input type="text" id="früherer Name (ggf. Geburtsname)" size="46"style="background-color: rgb(129, 208, 233);">
+                </form>
+            </td>
+            <td >
+                <form>
+                    <label for="geburtsdatum">Geburtsdatum(n)</label><br>
+                    <input type="text" id="geburtsdatum(n)"style="background-color: rgb(129, 208, 233);">
+                </form>
+            </td>
+            <td>
+                <form>
+                    <label for="geschlecht">Geschlecht(n)</label><br>
+                    <input type="text" id="geschlecht(n)"style="background-color: rgb(129, 208, 233);">
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <form>
+                    <label for="bekannte">bekannte Anschrift</label><br>
+                    <input type="text" id="bekannte" size="55"style="background-color: rgb(129, 208, 233);">
+                </form>
+            </td>
+        </tr>
+    </table>
+    <p>Ein Auskunft ist nur möglich, wenn Sie folgende beantworten und einer folgenden Erklärungen abgeben.<br>
+
+       Werden die Daten für einen gewerblichen Zweck benötigt?</p>
+       <form>
+        <input type="checkbox" id="nein" name = "option1" value="nein"style="background-color: rgb(129, 208, 233);">
+        <label for="nein">Nein</label>
+        <input type="checkbox" id="ja" name = "option2" value="nein"style="background-color: rgb(129, 208, 233);">
+        <label for="ja">Ja,fur folgenden Zwech:</label>
+        <select name="" id="">
+        </select><br>
+        <input type="checkbox" id="erk" name="option3" value=""style="background-color: rgb(129, 208, 233);">
+        <label for="erk"> Hiermit erkläre ich,dass die Daten der angefragten Person <span>nicht</span> zum Zwecke der Werbung oder des <br>
+        Adresshandels verwendet werden.</label><br><br>
+        <button type="button" onclick="alert('Hello User');">Abschicken</button>
+        <button type="button" onclick="alert('Hello User');">Zurücksetzen</button>
+
+
+       </form>
+</body>
+</html>

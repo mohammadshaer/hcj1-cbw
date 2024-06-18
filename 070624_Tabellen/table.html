@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+
+<!-- HTML ist hierarchisch aufgebaut -->
+<html> <!-- Hypertext Markup Language, ist ein XML-Dialekt -->
+    <!-- Browser liest HTML aus und stellt es dar-->
+    <head>
+  
+        <meta name="keywords" content="Test, Entwicklung, HTML, CBW">
+        <meta name="description" content="Hier ist eine Beschreibung meiner Webseite">
+        <meta name="author" content="Matthias Hofmann">
+        <meta charset="UTF-8">
+        <title> Mein EM-Blog</title>
+        <link rel="icon" type="image/svg+xml" href="http://localhost/hcj1_web/img/football.svg">
+        
+        <!-- Nachteil bisheriger Ansätze: 
+        Redundanzen (Wiederholungen) von Anweisungen
+        Bei geänderten Anforderungen (z.B. Schrift soll einen anderen Stil bekommen),
+        müsst ihr in JEDER Datei die Änderung vornehmen oder im Zweifel auf Ebene jeden Elements  -->
+
+       <!-- CSS als externe Ressource einbinden -->
+       <link rel="stylesheet" type="text/css" href="css/article.css">
+
+       <style>
+            .bordered, td {
+                border: 1px dashed #601313;
+            }
+            tr {
+                background-color: lightgray; /* Fügt jeder Zeile einen 1px starken schwarzen Rand hinzu */
+        }
+
+       </style>
+       
+    </head>
+
+    <body>
+
+        <h3>Eine einfache Tabelle:</h3>
+        <!-- Tabellen sind folgendermaßen aufgebaut -->
+        <table>
+            <!-- Zeilen definieren (table row) -->
+             <tr>    
+                <td> Heim </td>
+                <td> Gast </td>
+             </tr>
+             <tr>
+                <td> Haie </td>
+                <td> Eisbären </td>
+             </tr>
+        </table>
+
+
+        <h3>Tabelle mit th-Tag</h3>
+        <table>
+            <!-- Zeilen definieren (table row) -->
+             <tr>
+                <!-- statt <td style="font-size:16px; font-weight: bold; text-align: center;"> Heim </td> -->
+                <th> Heim </th>
+                <th> Gast </th>
+             </tr>
+             <tr>
+                <td> Haie </td>
+                <td> Eisbären </td>
+             </tr>
+        </table>
+
+        <h3>Tabelle mit einem ersten Style: </h3>
+        <table class="bordered">
+            <!-- Zeilen definieren (table row) -->
+             <tr>
+                <!-- statt <td style="font-size:16px; font-weight: bold; text-align: center;"> Heim </td> -->
+                <th> Heim </th>
+                <th> Gast </th>
+             </tr>
+             <tr>
+                <td> Haie </td>
+                <td> Eisbären </td>
+             </tr>
+        </table>
+
+
+        <table>
+            <tr>
+                <th></th>
+                <th scope="col">Vormittag</th>
+                <th scope="col">Nachmittag</th>
+            </tr>
+            <tr>
+                <th scope="row">Montag</th>
+                <td colspan="2">Einführung in HTML und CSS</td>
+            </tr>
+            <tr>
+                <th scope="row">Dienstag</th>
+                <td>Einführung in JavaScript</td>
+                <td>Verschiedene JavaScript-APIs</td>
+            </tr>
+            <tr>
+                <th scope="row">Mittwoch</th>
+                <td>Einführung in React</td>
+                <td>Abschlussprojekt</td>
+            </tr>
+        </table>
+
+    </body>
+
+
+
+
+</html>
+

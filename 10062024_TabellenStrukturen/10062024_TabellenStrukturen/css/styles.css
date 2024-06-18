@@ -1,0 +1,31 @@
+/* Hier einfach die Styles definieren */
+p {
+    /* An dieser Stelle füge ich die CSS-Eigenschaften 
+    FÜR ALLE HTML Elemente mit dem Namen p ein */
+    /* color: red; CSS Anweisungen mit ; abschließen */
+    text-align: justify;
+
+    /* Zeilenabstand */
+    line-height: 1.5;
+}
+
+h1 {
+    /* Farbe ändern */
+    /* Schriftgröße ändern */
+    font-size: 30px;
+    /* Schriftart ändern */
+    /* bevorzugt: serifenlose Schriftarten, verfügbar auf allen Systemen */
+    font-family: Arial, Helvetica, sans-serif;
+
+    /* */ 
+    text-align: center;
+    /*text-decoration: underline; */
+    background-color: grey;
+    /* background-color: rgb(14, 50, 245); */
+    /* background-color: #000000; */
+} 
+
+span {
+    background-color: azure;
+    font-weight: bold;
+}

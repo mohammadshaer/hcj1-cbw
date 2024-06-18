@@ -1,0 +1,7 @@
+/* Hier einfach die Styles definieren */
+p {
+    /* An dieser Stelle füge ich die CSS-Eigenschaften 
+    FÜR ALLE HTML Elemente mit dem Namen p ein */
+    color: red; /* CSS Anweisungen mit ; abschließen */
+    text-align: center;
+}
