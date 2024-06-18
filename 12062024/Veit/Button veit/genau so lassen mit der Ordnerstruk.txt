@@ -1,0 +1,2 @@
+genau so lassen mit der Ordnerstruktur
+funktioniert out of the box
