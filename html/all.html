@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Paragraph</h3>
+    <h5>
+        <ol>
+            <li>
+        إذا وجد أكثر من مسافة بين الكلمات يبقي مسافة واحدة فقط.
+           </li>
+           <li>
+    إذا وجد أسطر فارغة، سيقوم بإزلتها عند عرض المحتوى في الصفحة.
+           </li>
+           <li>
+    إذا وجد النص موضوع على أكثر من سطر عمداً, سيقوم بعرض كل المحتوى على نفس السطر و ينزل على السطر عند الحاجة فقط.
+           </li>
+        </ol>
+    </h5>
+    
+ <p>This is a paragraph.</p>
+ <p>This is another paragraph.</p>
+ <p>   This  paragraph    contains  extra    spaces.</p>
+ <p>Hello guys, my name is Mhamad.
+    I start learning programming at 19.
+    One year later I create harmash.com</p>
+    <!-- لإعلام المتصفح أنك تريد النزول على سطر جديد بداخل الفقرة, يجب وضع <br> في نهاية السطر. -->
+    <p>Here we break the paragraph.<br>This will apear on a new line.</p>
+    <!-- لإعلام المتصفح أنك تريد وضع أكثر من مسافة فارغة وراء بعض في النص، فالحل هو استخدام الرمز &nbsp; الذي يعني مسافة فارغة بالنسبة للمتصفح.
+     كل رمز &nbsp; تضعه يفهمه المتصفح على أنه مسافة فارغة يجب عدم إزالتها. -->
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;We add 4 white spaces at the beginning.</p>
+<!-- لعرض النص كما يظهر بالضبط في الكود نضع النص بداخل <pre> </pre>.
+
+إسم الوسم pre إختصار لعبارة Preformatted Text التي تعني نص منسق مسبقاً. -->
+<pre>
+    Name: Mhamad Harmush
+    Job:  Programmer
+    Age:  26
+</pre>
+<!-- لجعل المتصفح يعتبر الكود المكتوب كأحرف عادية فهناك شيئان يضمنا ذلك:
+
+تحويل كل < موجود في الكود إلى &lt;
+تحويل كل & موجود في الكود إلى &amp; -->
+<pre>
+    &lt;!DOCTYPE html>
+    &lt;html>
+        &lt;body>
+            &lt;p>HTML &amp; CSS are so easy to learn&lt;/p>
+        &lt;/body>
+    &lt;/html>
+    </pre>
+</body>
+</html>
