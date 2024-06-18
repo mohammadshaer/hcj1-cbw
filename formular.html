@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+
+<!-- HTML ist hierarchisch aufgebaut -->
+<html> <!-- Hypertext Markup Language, ist ein XML-Dialekt -->
+<!-- Browser liest HTML aus und stellt es dar-->
+
+<head>
+
+    <meta name="keywords" content="Test, Entwicklung, HTML, CBW">
+    <meta name="description" content="Hier ist eine Beschreibung meiner Webseite">
+    <meta name="author" content="Matthias Hofmann">
+    <meta charset="UTF-8">
+    <title> Formular</title>
+    <link rel="icon" type="image/svg+xml" href="http://localhost/hcj1_web/img/football.svg">
+
+    <!-- Nachteil bisheriger Ansätze: 
+        Redundanzen (Wiederholungen) von Anweisungen
+        Bei geänderten Anforderungen (z.B. Schrift soll einen anderen Stil bekommen),
+        müsst ihr in JEDER Datei die Änderung vornehmen oder im Zweifel auf Ebene jeden Elements  -->
+
+    <!-- CSS als externe Ressource einbinden -->
+    <link rel="stylesheet" type="text/css" href="css/article.css">
+    <style>
+        span {
+            font-weight: bold;
+        }
+
+        /* Selektion über eine Kombinatio von HTML-Tag und 
+            Attribut mit spezifischem value */
+        input[type=checkbox] {
+            margin-left: 20px;
+        }
+
+        /* b {
+            font-weight: normal;
+            background-color: brown;
+        } */
+    </style>
+
+</head>
+
+<body>
+
+
+    <section>
+        <!-- Interaktion mit dem Server, Login, Bestellungen, Feedback, ... -->
+        <!-- Nutzereingaben -->
+        <article>
+            <h1> Einfaches Textfeld</h1>
+            <!-- Styles auf Element-Ebene einbinden -->
+            <p> Textfelder werden mit dem input type realisiert.
+                Das Attribute type ermöglicht eine Auswahl von vorkonfigurierten Textfeldern, name ist ein Bezeichner
+                für die Verarbeitung auf dem Server,
+                size gibt die Breite des Textfeldes an und maxlength die Anzahl der Zeichen, die eingegeben werden
+                können. </p>
+            <p> Labels beschriften Eingabefelder und erhöhen die User-experience.
+                Verbesserung von Zugänglichkeit, Gestaltungsmöglichkeiten für Interaktionsdesign, differenzierte
+                Formatierung, ...
+            </p>
+            <p>
+            <ul>
+                <li>Mit value kann ich bei date und datetime-local die Datumsauswahl
+                    vorinitialisieren.
+                </li>
+                <li>Datumsformate sind lokalisiert.
+                </li>
+                <li>Es gibt noch weitere zeitbezogene input-types, z.B. month, week.
+                    Hier gibt es bei einigen browsern Darstellungsprobleme.
+                </li>
+                <li>
+                    Man kann mit JavaScript Attributwerte wie z.B. die aktuelle woche im Jahr mit
+                    einem Wert dynamisch vorinitialisieren (z.B. kann man sich an der aktuellen Kalenderwoche
+                    orientieren)
+                </li>
+            </ul>
+            </p>
+            <!-- Formulare werden in einem form-Tag ummantelt. 
+              So sind zusammengehörige UI-Elemente für Formulare
+              zu gruppieren. -->
+            <!-- Konsitenz von maxlength zu einer Datenbank, die
+               im Backend existiert. -->
+            <!-- Plausibilitätsprüfung. -->
+            <form>
+                <label for="vn">Vorname: </label>
+                <input id="vn" type="text" placeholder="Bitte Vornamen eingeben" name="vorname" size="15"
+                    maxlength="20">
+                <br>
+                <label for="gehalt">Gehalt: </label>
+                <input id="gehalt" type="number" placeholder="Gehalt" name="gehalt" size="15" max="10000">
+                <br>
+                <label for="mail">Mail: </label>
+                <input id="mail" type="email" placeholder="Mail" name="email" size="15" maxlength="20">
+                <br>
+
+                <label for="datum">Datum (nur Datum): </label>
+                <input id="datum" type="date" name="datum" value="2024-06-12">
+                <br>
+
+
+                <!-- Lokalisierte Darstellung von Datum und Uhrzeit je nach Browsereinstellung -->
+                <label for="date">Datum (Datum und lokalisierte Uhrzeit): </label>
+                <input id="date" type="datetime-local" name="date" value="2024-06-12 12:00"><br>
+
+                <label for="zeit">Zeit: </label>
+                <input id="zeit" type="time" placeholder="Datum" name="date" size="0" maxlength="10"><br>
+
+                <label for="woche">Woche: </label>
+                <input id="woche" type="week" name="woche"><br>
+
+                <label for="wochenform">Woche: </label>
+                <input id="wochenform" type="number" placeholder="Gehalt" name="wochenform" size="15" min="1" max="52"
+                    value="27"><br>
+
+                <label for="wertebereich">Ein Wertebereich: </label>
+                <input id="wertebereich" type="range" name="wertebereich" value="10" min="1" max="10" step="1"><br>
+
+                <button>Ein Button </button>
+            </form>
+        </article>
+        <!-- Trennlinie für Webseitenbereiche oder Formulare -->
+        <hr>
+        <article>
+            <h3>Beispiel für eine Textarea (mehrzeiliges Eingabefeld)</h3>
+            <p>
+                Formulare sollten IMMER im Tag stehen und auch über ein verfügen
+                Das mehrzeilige Eingabefeld eignet sich vor allem für ein differenziertes Feedback.
+                Es kann mit folgenden Attributen belegt werden.
+            <ul>
+                <!-- Hervorhebung etwa mit <b>, <span>, ... möglich-->
+                <!-- unkomplizierte Verwendung der Tags "mal eben" im Fließtext-->
+                <li><span>rows</span> und <b>cols</b> geben die Größe an.</li>
+                <li><em>maxlength</em> ist das Maximum an Zeichen, die eingegeben werden können.</li>
+            </ul>
+            </p>
+            <form>
+                <label for="wochenform">Feedback: </label>
+                <textarea name="feedback" id="feedback" rows="5" cols="50" maxlength="250">Bitte ausfüllen
+                </textarea><br>
+            </form>
+        </article>
+        <hr>
+        <article>
+            <h3>Dropdown- bzw. Auswahllisten</h3>
+            <p>
+                Dropdowns werden mit dem select-Tag definiert.
+                Die einzelnen Optionen eines select-Tags werden mit dem option Tag dargestellt.
+                Dieses Option-Tag muss ein value-Attribut haben, damit einen konkreten Wert für
+                die weitere Verarbeitung hat.
+                Die Beschriftung der Optionen steht im innerHTML-Bereich.
+                Dropdowns verwende ich dann, wenn ich eine kleine Menge an sich ausschließenden
+                Optionen habe. <br>
+                Auswahllisten sind ausgerollte Dropdowns.
+                Mit dem Attribut selected können Elemente vorausgewählt werden.
+            </p>
+            <p>
+                <label for="dd">Pizza: </label>
+                <select id="dd">
+                    <!-- innerHTML -->
+                    <!-- values per Konvention lieber klein geschrieben, 
+                      ohne Umlaute, ohne Leerzeichen -->
+                    <option value="salami">Salami</option>
+                    <option value="vierkaese">Vier Käse</option>
+                    <option value="vegetarisch" selected>Vegetarisch</option>
+                </select>
+
+                <!-- Scrolling bei size="2", bei size="5" gibt es zwei
+                 nicht-selektierbare, leere Einträge am Ende der Liste. -->
+                <select id="dd" size="3">
+                    <!-- innerHTML -->
+                    <!-- values per Konvention lieber klein geschrieben, 
+                      ohne Umlaute, ohne Leerzeichen -->
+                    <option style="display: none;" value="salami">Salami</option>
+                    <option value="vierkaese" selected>Vier Käse</option>
+                    <option value="vegetarisch">Vegetarisch</option>
+                </select>
+            </p>
+        </article>
+        <hr>
+        <article>
+            <h3>Radiobuttons</h3>
+            <p>
+                Radiobuttons sind kleine, runde Buttons, die als switch
+                angesehen werden können. Diese lassen sich in Gruppen organisieren.
+                Die Gruppen werden anhand des name-Attributs zugewiesen. <br>
+                Radiobuttons brauchen ein value-Attribut, um die selektierte
+                Eingabe innerhalb der Gruppe auslesen zu können.
+                Mit dem Attribut checked können Elemente vorausgewählt werden.
+            </p>
+            <p>
+            <form>
+                <input type="radio" id="ohnek" name="extrakaese" value="ohnek" checked>
+                <label for="ohnek">Mit Käseersatz </label><br>
+                <input type="radio" id="wenigk" name="extrakaese" value="wenigk">
+                <label for="wenigk">Mit wenig Käse</label><br>
+                <input type="radio" id="normalk" name="extrakaese" value="normalk">
+                <label for="normalk">Normal </label><br>
+                <input type="radio" id="vielk" name="extrakaese" value="vielk">
+                <label for="vielk">Mit viel Käse</label><br>
+            </form>
+            </p>
+
+        </article>
+        <hr>
+        <article>
+            <h3>Checkboxen</h3>
+            <p>
+                Checkboxen sind UI-Elemente, die eine Mehrfachauswahl zulassen
+                (es können keine, eins oder viele / alle Elemente ausgewählt werden.) <br>
+                Checkboxen haben ebenfalls ein name-Attribut (für die Gruppe),
+                unterschiedliche Values (value-Attribut) und der type ist "checkbox".
+            </p>
+            <form>
+                <input type="checkbox" id="zwiebel" name="belag" value="zwiebel">
+                <label for="zwiebel">Zwiebel </label><br>
+                <input type="checkbox" id="tomaten" name="belag" value="tomaten">
+                <label for="tomaten">Tomaten </label><br>
+                <input type="checkbox" id="mozarella" name="belag" value="mozarella">
+                <label for="mozarella">Mozarella </label><br>
+            </form>
+        </article>
+
+        <article>
+            <h3>Submit- und Reset-Buttons</h3>
+            <p>
+                Mit einem Submit-Button schicke ich Formular-Daten an einen Server.
+                Bevor das ausgeführt wird, checkt das System, ob alle Formulardaten
+                gemäß Plausibilitäten (ist eine Telefonnummer im gültigen Format?
+                Enthält eine Mailadresse ein @?)
+                und Vollständigkeiten (gem. Pflichtfelder, required-Attribut)
+                die Spezifikation erfüllen. Es gibt viele unterschiedliche input types, 
+                um Plausibilitätsprüfungen zu ermöglichen.
+                Es bietet sich an, viele dieser Checks aufgrund einer schnelleren
+                Reaktionszeit und Schonung des Netzwerks clientseitig zu überprüfen. 
+                <br>
+                Mit dem value-Tag des input types submit / reset wird der Button beschriftet.
+                Mit reset setze ich die Eingaben auf das Formular zurück. <br>
+
+                 
+            </p>
+            <p>
+            <form>
+                <label for="vn2">Vorname: </label>
+                <input id="vn2" type="text" placeholder="Vorname" name="vorname" size="50" required>
+                <br>
+                <label for="mail2">Mail: </label>
+
+                <input id="mail2" type="email" placeholder="Mail" name="mail2" size="50">
+                <br>
+
+                <input type="submit" value="Abschicken">
+                <input type="reset" value="Zurücksetzen">
+                </p>
+            </form>
+
+        </article>
+
+    </section>
+
+
+</body>
+
+
+
+
+</html>
