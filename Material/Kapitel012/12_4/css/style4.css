@@ -1,0 +1,6 @@
+.imgleft {
+    float: left;
+    margin-right: 0.5rem;
+    shape-outside: url(../bilder/blende.png);
+    shape-margin: 1.5rem;
+}

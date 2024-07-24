@@ -1,0 +1,44 @@
+.card,
+.card-a1 {
+    background-color: #737b7c;
+    color: white;
+    width: 100%;
+}
+
+.a1 {
+    width: 220px;
+}
+
+.a2 {
+    width: 200px;
+}
+
+.a3 {
+    width: 250px;
+}
+
+.a4 {
+    width: 275px;
+}
+
+.card-container {
+    max-width: 42em;
+    margin: 0 auto;
+    background-color: aqua;
+    height: 400px;
+}
+
+.card p {
+    padding: 10px 20px;
+    font-family: system-ui;
+}
+
+.card-container {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(2, 20em);
+    /*align-content: center;*/
+    /*justify-content: center;*/
+    /*align-items: end; */
+    /*justify-items: end;*/
+}

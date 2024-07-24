@@ -1,0 +1,119 @@
+:root {
+    --color-background: #fff;
+    --color-box: #eee;
+    --color-border: #555;
+    --color-text-1: #000;
+    --color-text-2: hsla(0, 100%, 25%, 1);
+    --color-shadow: rgba(0, 0, 0, 0.22);
+    --color-hover: rgb(111, 178, 111);
+    --image-url: url(../image/light.png);
+}
+
+
+/* Dark Mode */
+
+@media (prefers-color-scheme: dark) {
+     :root {
+        --color-background: #1e1e1e;
+        --color-box: #3e3e3e;
+        --color-border: #222;
+        --color-text-1: #fff;
+        --color-text-2: hsla(0, 100%, 65%, 1);
+        --color-shadow: rgba(0, 0, 0, 0.66);
+        --color-hover: rgb(0, 187, 0);
+        --image-url: url(../image/dark.png);
+    }
+}
+
+.light {
+    --color-background: #fff;
+    --color-box: #eee;
+    --color-border: #555;
+    --color-text-1: #000;
+    --color-text-2: hsla(0, 100%, 25%, 1);
+    --color-shadow: rgba(0, 0, 0, 0.22);
+    --color-hover: rgb(111, 178, 111);
+    --image-url: url(../image/light.png);
+}
+
+.dark {
+    --color-background: #1e1e1e;
+    --color-box: #3e3e3e;
+    --color-border: #222;
+    --color-text-1: #fff;
+    --color-text-2: hsla(0, 100%, 65%, 1);
+    --color-shadow: rgba(0, 0, 0, 0.66);
+    --color-hover: rgb(0, 187, 0);
+    --image-url: url(../image/dark.png);
+}
+
+.image2load {
+    content: var(--image-url);
+}
+
+body {
+    background: var(--color-background);
+    font-family: "Open Sans", "Arial", sans-serif;
+}
+
+
+/* Teaser */
+
+.teaser {
+    border: 0.3em solid var(--color-border);
+    margin: 0 auto;
+    width: 65vw;
+    padding: 2em;
+    box-shadow: 0px 3px 3px 0px var(--color-shadow), 0px 3px 6px 0px var(--color-shadow);
+    background: var(--color-box);
+    color: var(--color-text-1);
+}
+
+h1 {
+    margin-top: 0;
+}
+
+.teaser__heading {
+    color: var(--color-text-2);
+}
+
+
+/* Selektor */
+
+.selector {
+    margin: 3rem auto;
+    display: flex;
+    justify-content: center;
+}
+
+.selector div {
+    background-color: var(--color-box);
+}
+
+.selector label {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    color: var(--color-text-1);
+}
+
+.selector label svg {
+    width: 2rem;
+    height: 2rem;
+    fill: var(--color-text-1);
+}
+
+input:hover+label {
+    background-color: var(--color-hover);
+    cursor: pointer;
+}
+
+input[type="radio"] {
+    position: fixed;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.hide {
+    display: none;
+}

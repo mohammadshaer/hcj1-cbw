@@ -1,0 +1,48 @@
+.flex-container1,
+.flex-container2,
+.flex-container3,
+.flex-container4,
+.flex-container5 {
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 6rem;
+    max-width: 42rem;
+    gap: 1rem;
+    background: #e7eefc;
+    border: solid 1px blue;
+    margin-bottom: 4px;
+}
+
+.flex-container1 {
+    align-items: stretch;
+}
+
+.flex-container2 {
+    align-items: start;
+}
+
+.flex-container3 {
+    align-items: end;
+}
+
+.flex-container4 {
+    align-items: center;
+}
+
+.flex-container5 {
+    align-items: baseline;
+}
+
+.item,
+.item2 {
+    flex: 0 0 18%;
+    background-color: white;
+    border: solid 1px lightgray;
+    padding: 10px;
+    text-align: center;
+    font-size: smaller;
+}
+
+.item2 {
+    font-size: x-large;
+}

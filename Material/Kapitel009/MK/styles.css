@@ -1,0 +1,22 @@
+a {
+  color: green;
+  text-decoration: underline;
+}
+
+/* Links zu kicker.de */
+a[href^="https://www.kicker.de"] {
+    color: blue;
+    font-weight: bold;
+  }
+  
+  /* Links zu PDF-Dokumenten */
+  a[href$=".pdf"] {
+    color: red;
+    text-decoration: none;
+  }
+  
+  /* Normale Links */
+  /* a:not([href^="https://www.kicker.de"]):not([href$=".pdf"]) {
+    color: green;
+    text-decoration: underline;
+  } */

@@ -1,0 +1,14 @@
+h2 {
+    margin: 0;
+}
+
+article {
+    background: #e9d9c1;
+}
+
+.article_01 {
+    width: 75%;
+    padding: 0.5em;
+    border: 0.5em solid whitesmoke;
+    margin: 1em auto;
+}

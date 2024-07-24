@@ -1,0 +1,28 @@
+body {
+    /* background ist wie vererbt, weil transparent
+    der standard ist (danke Lea) */
+    background: gray;
+    /* wird übertragen auf alle Kinder */
+    font-family: Arial, Verdana;
+    color: white;
+    /* Wird auf ps, die unter body sind, vererbt.
+    Wird nicht auf Artikel vererbt, weil dort kein body: inherit ist.  */
+    /* border: 2px solid salmon; */
+}
+
+article {
+    /* inset sorgt für 3D-Effekt */
+    border: 4px inset darkgray;
+    padding: 5px;
+    background: lightgray;
+    color: black;
+}
+
+p {
+    /* inherit gibt an, dass diese Eigenschaft
+    von den Eltern geerbt werden soll,
+    bei margins, borders etc. muss das erzwungen 
+    werden  */ 
+    border: inherit;
+    background: lightblue;
+}

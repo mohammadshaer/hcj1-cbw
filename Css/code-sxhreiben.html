@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>code-schreiben</title>
+    <style>
+        *{
+            font-family: 'Lato', Sans-Serif;
+        }
+    </style>
+</head>
+<body>
+    <thead><span style="font-size: 50px; display:flex ;justify-content: center; background-color: blue;">CSS(Cascading Style Sheet)</span></thead>
+    <tbody>
+        <h1>Es gibt drei Ansätze, die Sie befolgen können, um CSS-Code hinzuzufügen</h1>
+        <ol>
+            <li>
+                <h3>Inline CSS:</h3> 
+                <p>Jedem Tag, das Sie auf der Seite hinzufügen, können Sie die style-Eigenschaft hinzufügen und den CSS-Code direkt als Wert übergeben.</p>
+                <div style="background-color: rgba(156, 156, 153, 0.749); border-radius: 8px;">
+                    <p>
+                        <pre>
+                            <p style="color: #000;">Beispiel:</p>
+                            <div style="padding: 10px; margin: 10px;background-color: white; border-radius: 8px;">
+                            &lt;h1 style="color:blue; text-align:center;">Hello World!&lt;/h1> 
+                            </div>
+                        </pre> 
+                    </p>     
+                </div>
+            </li>
+            <li>
+                <h3> Internal CSS:</h3> 
+                <p>Sie können das Styling-Tag an einer beliebigen Stelle auf der Seite hinzufügen und darin CSS-Eigenschaften zu jedem Tag auf der Seite hinzufügen.</p>
+                <div style="background-color: rgba(156, 156, 153, 0.749); border-radius: 8px;">
+                    <p>
+                        <pre>
+                            <p style="color: #000;">Beispiel:</p>
+                            <div style="padding: 10px; margin: 10px;background-color: white; border-radius: 8px;">
+                                    &ltstyle>
+                                        h1 {
+                                            color: blue;
+                                            text-align: center;
+                                        } 
+                                        &lt;/style>
+                                        &lt;h1>Hello World!&lt;/h1>
+                            </div>
+                        </pre>
+                    </p>
+            </div>
+            </li>
+            <li>
+                <h3>External CSS</h3> 
+                <p>Sie können den CSS-Code in die CSS-Erweiterungsdatei einfügen und ihn dann auf der Seite mit dem Tag Link einbetten, der im head-Tag platziert werden muss.</p>
+                <div style="background-color: rgba(156, 156, 153, 0.749); border-radius: 8px;">
+                    <p>
+                        Beispiel:
+                        <pre >
+                                style.css
+                                <div style="padding: 10px; margin: 10px;background-color: white; border-radius: 8px;">
+                                    h1 {
+                                        color: blue;
+                                        text-align: center;
+                                    } 
+                                </div>
+                                index.html
+                                <div style="padding: 10px; margin: 10px;background-color: white; border-radius: 8px;">
+                                        &lt;!DOCTYPE html>
+                                        &lt;html>
+                                            &lt;head>
+                                                &lt;!-- Hier haben wir die Datei style.css -->
+                                                &lt;link rel="stylesheet" href="style.css">
+                                            &lt;/head>
+                                            &lt;body>
+                                                &lt;h1>Hello World!</h1>
+                                            &lt;/body>
+                                        &lt;/html>    
+                                </div>
+                                
+                        </pre>
+                    </p>
+                </div>
+            </li>
+        </ol>
+        
+    </tbody>
+</body>
+</html>

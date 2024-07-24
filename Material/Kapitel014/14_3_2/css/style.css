@@ -1,0 +1,21 @@
+body {
+    background: lightgrey;
+    color: darkgray;
+}
+
+@media (prefers-contrast: more) {
+    body {
+        background: black;
+        color: white;
+    }
+}
+
+.teaser {
+    margin: 0 auto;
+    width: 65vw;
+    padding: 2em;
+}
+
+h1 {
+    margin-top: 0;
+}

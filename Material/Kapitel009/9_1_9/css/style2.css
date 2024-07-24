@@ -1,0 +1,45 @@
+* { background-color: white; }
+body { padding: 5px; }
+
+h1:first-child {
+    border: 2px solid red;
+}
+
+/* Immer aus der Sicht des aktuellen Elementes denken
+Bin ich das erste Kind? */
+li:first-child {
+    border: 2px solid red;
+}
+
+li:last-child {
+    border: 2px solid green;
+}
+
+li:nth-child(3) {
+    border: 2px solid yellowgreen;
+}
+
+article p {
+    border: 1px red solid;
+}
+
+/* Wir kombinieren hier einen Klassenselektor mit der Auswahl 
+des n-ten Kindes für li Elemente.
+Auf li Ebene: Gehören wir zu dem jeweils dritten Kindern in Reihe? 
+Wir wenden dieses Styling NUR an, wenn wir ein ÜBERGEORDNETES
+Element haben, das der Klasse spez zugehörig ist. 
+*/
+/* .spez li:nth-child(3n) {
+    border: 2px solid black;
+} */
+
+/* Wie kann dieser Ausdruck noch eingeschränkt werden
+auf ul-Listen mit dem Style spez? 
+Beispiel für einen Nachfahrenselektor. */ 
+ul.spez li:nth-child(3n) {
+    border: 2px solid green;
+}
+
+
+/* :first-child { border: 2px solid black;  }
+:last-child { border: 2px dotted gray; } */ 

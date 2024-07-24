@@ -1,0 +1,9 @@
+article:first-of-type {
+    border-top: 2px solid black;
+    margin-top: 5px;
+}
+
+article:last-of-type {
+    border-bottom: 2px solid black;
+    margin-bottom: 5px;
+}

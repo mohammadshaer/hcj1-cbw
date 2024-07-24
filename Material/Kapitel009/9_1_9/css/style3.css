@@ -1,0 +1,22 @@
+tr:nth-child(odd) {
+    background: lightgray;
+}
+
+tr:nth-child(even) {
+    background: grey;
+}
+
+/* nur das 3. element */ 
+tr:nth-child(3) {
+    background: sandybrown;
+}
+
+/* für jedes 3. Element anwenden. */
+tr:nth-child(3n) {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+/* Agnostisch gegenüber Änderungen (immer das letzte Element stylen) */
+tr:last-child {
+    background: green;
+}

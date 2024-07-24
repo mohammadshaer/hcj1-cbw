@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tamagotchi</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="tamagotchi">
+        <h1>Tamagotchi</h1>
+        <div id="status">
+            <p>Name: <span id="name">Tommy</span></p>
+            <p>Hunger: <span id="hunger">5</span></p>
+            <p>Happiness: <span id="happiness">5</span></p>
+        </div>
+        <div id="actions">
+            <button onclick="feed()">Feed</button>
+            <button onclick="play()">Play</button>
+            <button onclick="checkStatus()">Check Status</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>

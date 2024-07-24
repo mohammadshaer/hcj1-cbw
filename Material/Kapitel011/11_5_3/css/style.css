@@ -1,0 +1,12 @@
+h1,
+p {
+    margin-top: 0;
+}
+
+.article01 {
+    width: 85%;
+    background-image: url("../bilder/pattern.png");
+    padding: 10px;
+    background-color: #c4c4c4;
+    border: 1px solid black;
+}

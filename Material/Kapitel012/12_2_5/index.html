@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Positionierung</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/style2.css">
+</head>
+
+<body>
+    <h1 id="start">Einführung in CSS</h1>
+    <a href="#start" class="up">Nach oben</a>
+    <h2>CSS-Positionierung</h2>
+    <p>CSS-Positionierung ist ein wichtiger Aspekt bei der Gestaltung von Webseiten und ermöglicht die präzise Platzierung von HTML-Elementen auf einer Webseite. Es gibt mehrere Methoden der CSS-Positionierung, darunter relative, absolute, feste und fliessende
+        Positionierung. Die relative Positionierung ermöglicht es, ein Element relativ zu seiner normalen Position im Fluss des Dokuments zu verschieben. Dies kann mit den Eigenschaften "position: relative;" und "top", "right", "bottom" oder "left" erreicht
+        werden, um das Element in Bezug auf seine ursprüngliche Position zu verschieben. Die absolute Positionierung ermöglicht es, ein Element relativ zu seinem nächsten positionierten Elternelement oder zum Wurzelelement des Dokuments zu positionieren.
+        Dies wird mit "position: absolute;" und den entsprechenden Werten für "top", "right", "bottom" oder "left" erreicht. Absolute Positionierung ist oft nützlich, um Elemente genau an einer bestimmten Stelle auf der Seite zu positionieren, unabhängig
+        von anderen Elementen. Die feste Positionierung ermöglicht es, ein Element relativ zur Ansichtsfläche des Browsers zu positionieren, sodass es beim Scrollen der Seite an einer festen Position bleibt. Dies wird mit "position: fixed;" und den entsprechenden
+        Werten für "top", "right", "bottom" oder "left" erreicht. Feste Positionierung wird oft für Elemente wie Header oder Navigation verwendet, die immer sichtbar sein sollen, wenn der Benutzer durch eine Webseite scrollt. Die fließende Positionierung,
+        auch als "float" bekannt, ermöglicht es, ein Element aus dem normalen Fluss des Dokuments zu entfernen und es an den linken oder rechten Rand des Elternelements zu positionieren. Dies wird mit "float: left;" oder "float: right;" erreicht. Schwebende
+        Elemente werden oft verwendet, um Text um Bilder oder andere Elemente herumfließen zu lassen. CSS-Positionierung ist ein mächtiges Werkzeug, um Elemente auf Webseiten präzise zu platzieren und komplexe Layouts zu gestalten. Es erfordert jedoch
+        ein gutes Verständnis der verschiedenen Positionierungsmethoden und ihrer Eigenschaften, um sie effektiv einzusetzen und ein responsives und ansprechendes Webdesign zu erstellen.</p>
+    <h2>Flexboxen</h2>
+    <p>Flexbox ist eine leistungsstarke Methode in CSS, um das Layout von Webseiten zu erstellen und zu steuern. Mit Flexbox können Elemente in einem Container so angeordnet werden, dass sie sich dynamisch anpassen und reagieren, um verschiedene Bildschirmgrößen
+        und Geräte anzupassen. Flexbox verwendet ein Container- und ein Item-Konzept. Der Container (englisch: "flex container") ist das übergeordnete Element, das die Flexbox-Eigenschaften definiert, während die darin enthaltenen Elemente als Items (englisch:
+        "flex items") bezeichnet werden. Mit Flexbox können verschiedene Ausrichtungen und Anordnungen von Items erstellt werden, darunter horizontale und vertikale Ausrichtungen, gleichmäßige Verteilung von Items im Container, Anpassung von Items an
+        unterschiedliche Größen und Reihenfolgen von Items. Ein Hauptkonzept von Flexbox ist die Flexbox-Ausrichtung, die es ermöglicht, Items entlang der Hauptachse (englisch: "main axis") und der Querachse (englisch: "cross axis") zu positionieren.
+        Die Hauptachse ist die Achse, in der die Items im Container angeordnet sind, entweder horizontal (bei "flex-direction: row;") oder vertikal (bei "flex-direction: column;"). Die Querachse ist die Achse, die senkrecht zur Hauptachse steht. Mit Flexbox-Eigenschaften
+        wie "justify-content", "align-items" und "align-self" können Items entlang der Haupt- und Querachse ausgerichtet und positioniert werden. Ein weiteres leistungsstarkes Feature von Flexbox ist die Möglichkeit, die Größe von Items im Container zu
+        steuern. Mit "flex-grow", "flex-shrink" und "flex-basis" können Items so angepasst werden, dass sie sich flexibel an die Größe des Containers anpassen und Platz optimal nutzen. Es ist auch möglich, die Reihenfolge von Items im Container mit der
+        "order"-Eigenschaft zu ändern, ohne die HTML-Reihenfolge zu ändern. Flexbox ist eine moderne und effiziente Methode zur Erstellung von flexiblen und reaktionsfähigen Layouts in CSS. Es bietet eine große Flexibilität und Kontrolle über die Anordnung
+        und Größenanpassung von Elementen, was es zu einem unverzichtbaren Werkzeug für Webdesigner und Entwickler macht, um ansprechende und flexible Webseitenlayouts zu erstellen.</p>
+    <h2>Grid Layouts</h2>
+    <p>Grid Layouts in CSS sind eine leistungsstarke Methode zur Erstellung von komplexen und flexiblen Layouts für Webseiten. Mit Grid Layout können zweidimensionale Rastersysteme erstellt werden, die die Positionierung und Ausrichtung von Elementen entlang
+        der horizontalen und vertikalen Achse ermöglichen. Grid Layout bietet umfassende Kontrolle über das Rastersystem und die Positionierung von Items, was zu flexiblen und anpassungsfähigen Webseitenlayouts führt. Das Hauptkonzept von Grid Layout
+        ist das Rastersystem, das aus Spalten (englisch: "columns") und Zeilen (englisch: "rows") besteht. Mit CSS-Eigenschaften wie "grid-template-columns" und "grid-template-rows" können die Größen der Spalten und Zeilen definiert werden. Es ist möglich,
+        feste Werte oder flexible Einheiten für die Größen anzugeben, um das Rastersystem an die gewünschten Layout-Anforderungen anzupassen. Ein weiteres leistungsstarkes Feature von Grid Layout ist die Positionierung von Items im Rastersystem. Mit der
+        "grid-row" und "grid-column"-Eigenschaft können Items in spezifischen Zeilen und Spalten positioniert werden. Es ist auch möglich, Items über mehrere Zeilen oder Spalten hinweg zu erstrecken oder sie in mehreren Zeilen oder Spalten anzuordnen.
+        Mit der "grid-area"-Eigenschaft können benannte Gitterbereiche erstellt werden, um Items noch flexibler im Rastersystem zu positionieren. Ein großer Vorteil von Grid Layout ist die Flexibilität und Anpassungsfähigkeit für verschiedene Bildschirmgrößen
+        und Geräte. Grid Layout ermöglicht die Erstellung von mehrspaltigen Layouts, die sich automatisch an die verfügbare Bildschirmbreite anpassen können. Es bietet auch die Möglichkeit, Items in verschiedenen Zeilen oder Spalten zu reorganisieren,
+        um auf unterschiedlichen Bildschirmgrößen optimal angezeigt zu werden. Die Kontrolle über das Rastersystem und die Positionierung von Items macht Grid Layout auch für komplexe Layout-Anforderungen ideal. Es ermöglicht präzise Definition von Spalten-
+        und Zeilengrößen, die genaue Platzierung von Items und die Erstellung von benannten Gitterbereichen für eine klare und strukturierte Gestaltung von Webseitenlayouts. Insgesamt ist Grid Layout ein mächtiges und vielseitiges Feature in CSS, das
+        die Erstellung von ansprechenden und flexiblen Webseitenlayouts ermöglicht. Es bietet Flexibilität, Kontrolle und Lesbarkeit des Codes, was es zu einer wertvollen Methode für die Webentwicklung macht.</p>
+
+
+</body>
+
+</html>

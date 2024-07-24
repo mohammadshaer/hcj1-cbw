@@ -1,0 +1,11 @@
+body {
+    font-size: 1.25em;
+}
+
+.imgleft {
+    float: left;
+    margin-right: 0.5rem;
+    clip-path: polygon(0% 0%, 100% 50%, 0% 100%, 0% 0%);
+    shape-outside: polygon(0% 0%, 100% 50%, 0% 100%, 0% 0%);
+    shape-margin: 1rem;
+}

@@ -1,0 +1,61 @@
+label {
+    min-width: 5em;
+    display: inline-block;
+    text-align: left;
+}
+
+/* Alle Pflichtfelder werden schokoladenfarbig. */
+/* input[type=text]:invalid {
+    background-color: red;
+}
+
+input[type=text]:valid {
+    background-color: azure;
+} */
+
+/* Wir fassen ERST ALLE inout vom type text an */
+[type=text] {
+    background-color: azure;
+    margin-bottom: 5px;
+} 
+
+/* und erweitern die Regelung noch für BESTIMMTE Eingabefelder, die
+required sind. */
+[required] {
+    background-color: chocolate;
+}
+
+
+button[type=submit] {
+    margin-top: 1em;
+    width: 150px;
+}
+
+/* Er selektiert alle Elemente, in denen im Attribut title
+der wert "Pflicht" vorkommt und als eigenes Wort vorhanden ist. 
+Die Angabe ist case-sensitiv 
+*/
+
+[title~=Pflicht] {
+    text-decoration: underline;
+}
+
+/* Klassen werden in CSS nach Gruppen und "Familien" definieren.
+card-text
+Mit der Angabe von card könnten also ALLE Klassen, die mit card- anfangen,
+ausgewählt werden und ergänzt werden.
+*/
+[class|=test] {
+    padding: 5px;
+    background-color: black;
+    color: white;
+}
+
+.test-01 {
+    border: 2px solid red;
+}
+
+/* Mit focus kann ich das gerade aktive Feld extra gestalten */
+input:focus {
+    background-color: indigo;
+}

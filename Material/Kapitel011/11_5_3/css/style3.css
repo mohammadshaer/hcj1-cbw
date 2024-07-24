@@ -1,0 +1,9 @@
+.article01 {
+    width: 70%;
+    background-image: url('../bilder/pattern.png');
+    background-repeat: repeat-y;
+    background-position: right top;
+    padding: 10px;
+    padding-right: 200px;
+    border: 2px solid black;
+}

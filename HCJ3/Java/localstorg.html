@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box; 
+        }
+        
+        body {
+            padding: 20px;
+            font-family: arial;
+        }
+        
+        .box {
+            background: beige;
+            padding: 15px;
+            margin: 20px 0;
+        }
+        
+        .box h3 {
+            margin-bottom: 10px;
+        }
+        
+        .box input, .box button {
+            display: block;
+            margin-top: 10px;
+            height: 30px;
+            padding: 5px 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>JavaScript Local Storage</h1>
+    
+    <div class="box">
+        <h3>Add New Item</h3>
+        <input id="newItemName" placeholder="Item name"/>
+        <input id="newItemValue" placeholder="Item value"/>
+        <button onclick="addItem()">Add Item</button>
+    </div>
+    
+    <div class="box">
+        <h3>Get Item Value</h3>
+        <input id="itemNameToGet" placeholder="Item name"/>
+        <button onclick="showItem()">Get Value</button>
+    </div>
+    
+    <div class="box">
+        <h3>Remove Item</h3>
+        <input id="itemNameToRemove" placeholder="Item name"/>
+        <button onclick="removeItem()">Remove Item</button>
+    </div>
+    
+    <script>
+        function addItem() {
+            // Hier haben wir den Namen und den Wert des hinzuzufügenden Elements im lokalen Speicher gespeichert
+            let itemName = document.querySelector('#newItemName').value;
+            let itemValue = document.querySelector('#newItemValue').value;
+            // Hier haben wir das Element und seinen Wert im lokalen Speicher hinzugefügt
+            localStorage.setItem(itemName, itemValue);
+            // Hier haben wir ein Fenster gezeigt, um den Benutzer darüber zu informieren, dass die Erweiterung durchgeführt wurde
+            alert("Item is added to local storage.");
+        }
+        
+        // Diese Funktion wird verwendet, um den Wert eines Elements im lokalen Speicher anzuzeigen
+        function showItem() {
+            // Hier haben wir den Namen des Elements gespeichert, dessen Wert aus dem lokalen Speicher gewonnen werden soll
+            let itemName = document.querySelector('#itemNameToGet').value;
+            // Hier haben wir ein Fenster gezeigt und den Wert des Elements darin angezeigt
+            alert('Item Value = ' + localStorage.getItem(itemName));
+        }
+        
+        // Diese Funktion wird verwendet, um den Wert eines Elements im lokalen Speicher abzurufen
+        function removeItem() {
+            // Hier haben wir den Namen des Elements gespeichert, das aus dem lokalen Speicher gelöscht werden soll
+            let itemName = document.querySelector('#itemNameToRemove').value;
+            // Hier haben wir das Element - anhand seines Namens - aus dem lokalen Speicher gelöscht
+            localStorage.removeItem(itemName);
+            //hier haben wir ein Fenster gezeigt, um den Benutzer darüber zu informieren, dass es gelöscht wurde
+            alert("Item is removed from local storage.");
+        }
+    </script>
+</body>
+</html>

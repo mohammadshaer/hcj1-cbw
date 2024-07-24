@@ -1,0 +1,14 @@
+.article01 {
+    width: 90%;
+    background-image: url("../bilder/circle.svg");
+    background-size: 75px 75px;
+    /* Wert anpassen: repeat-x, repeat-y, round und space */
+    background-repeat: space;
+    border: 2px solid black;
+    padding: 0.75em;
+    background-color: white;
+}
+
+h1 {
+    display: inline;
+}

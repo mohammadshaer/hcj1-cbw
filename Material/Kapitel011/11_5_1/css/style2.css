@@ -1,0 +1,6 @@
+.rahmen {
+    width: 500px;
+    padding: 10px;
+    border: 12.5px solid transparent;
+    border-image: url("../bilder/myborder.svg") 50 50 50 50 round;
+}

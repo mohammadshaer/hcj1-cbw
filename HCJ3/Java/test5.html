@@ -1,0 +1,34 @@
+<html lang="de">
+<head>
+ 
+</head>
+    <body>
+        <h1>Switch case using DOM</h1>
+        <form id="forumContainer">
+            <input type="number" id="noten">
+        </form>
+            <p id="paras"></p>
+       
+       
+        <script>
+            // debugger
+            let form = document.querySelector('#noten');
+            let entriesP = document.querySelector('#paras');
+            form.addEventListener("blur", () => {
+                // this.value => undefined
+                let schulNoten = document.querySelector('#noten').value;
+                console.log(typeof schulNoten);
+                switch(schulNoten){
+                case "1":
+                    entriesP.textContent = "Sehr gut!";
+                    break;
+                case "2":
+                    entriesP.textContent = "Gut";
+                    break;
+                default:
+                    entriesP.textContent = "better luck next time!";
+                }
+            });          
+        </script>
+    </body>
+</html>

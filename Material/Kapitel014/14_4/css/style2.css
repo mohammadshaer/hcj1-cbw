@@ -1,0 +1,50 @@
+body {
+    margin: 0px;
+    font-family: arial;
+    box-sizing: border-box;
+}
+
+.card-container {
+    container-type: inline-size;
+    container-name: main-section;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 67.5em;
+    margin: 20px 20px;
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, .05);
+    border: 1px solid lightgray;
+}
+
+.small-container {
+    max-width: 40em;
+}
+
+.card-container .card-image,
+.card-image-2 {
+    flex-basis: 45%;
+    aspect-ratio: 4 / 3;
+    background-image: url("../bilder/images-1.jpg");
+    background-size: cover;
+}
+
+.card-container .card-image-2 {
+    background-image: url("../bilder/images-2.jpg");
+}
+
+.card-container .content {
+    flex-basis: 45%;
+    flex-grow: 0;
+    padding-left: 30px;
+}
+
+@container main-section (max-width: 50em) {
+    .card-container .card-image,
+    .card-image-2 {
+        flex-basis: 100%;
+        aspect-ratio: 17 / 9;
+    }
+    .card-container .content {
+        flex-grow: 1;
+        padding: 0 30px;
+    }
+}

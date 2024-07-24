@@ -1,0 +1,55 @@
+html,
+body {
+    height: 100%;
+    margin: 0 auto;
+    padding: 0;
+    background-color: black;
+    color: white;
+}
+
+.wrapper {
+    height: 100%;
+}
+
+.fixed-bg {
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 100%;
+    width: 100%;
+    color: white;
+    text-align: center;
+}
+
+.fixed-bg h1 {
+    vertical-align: middle;
+    padding: 50px;
+    margin: 0;
+}
+
+.scroll-bg {
+    background-color: #0f0f0a;
+    padding: 10px 70px;
+}
+
+
+/* Erste Sektion */
+
+.bg-1 {
+    background-image: url('../bilder/bg-1.jpg');
+}
+
+
+/* Zweite Sektion */
+
+.bg-2 {
+    background-image: url('../bilder/bg-2.jpg');
+}
+
+
+/* Dritte Sektion */
+
+.bg-3 {
+    background-image: url('../bilder/bg-3.jpg');
+}

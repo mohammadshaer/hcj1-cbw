@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Dark Mode mit dem Betriebssystem</title>
+    <meta charseth="UTF-8" />
+    <meta lang="de" />
+    <meta name="viewport" content="width:device-width, initial-scale:1.0" />
+    <link rel="stylesheet" href="./css/style2.css" />
+    <svg class="hide">
+        <symbol id="sun" viewbox="0 0 350 350" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2">
+          <circle cx="1446.07" cy="1006.2" r="127.537" transform="translate(-600.436 -364.68) scale(.53598)" />
+          <path d="M349.251 166.846a7.782 7.782 0 0 0-7.778-7.779h-72.464a7.782 7.782 0 0 0-7.779 7.779v15.557a7.783 7.783 0 0 0 7.779 7.779h72.464a7.783 7.783 0 0 0 7.778-7.779v-15.557zM88.022 166.846a7.782 7.782 0 0 0-7.778-7.779H7.78A7.782 7.782 0 0 0 0 166.846v15.557a7.783 7.783 0 0 0 7.779 7.779h72.464a7.783 7.783 0 0 0 7.778-7.779v-15.557zM166.847 0a7.782 7.782 0 0 0-7.778 7.778V80.24a7.782 7.782 0 0 0 7.778 7.78h15.557a7.783 7.783 0 0 0 7.78-7.78V7.778a7.783 7.783 0 0 0-7.78-7.779h-15.557zM166.847 261.228a7.782 7.782 0 0 0-7.778 7.779v72.464a7.782 7.782 0 0 0 7.778 7.778h15.557a7.783 7.783 0 0 0 7.78-7.778v-72.464a7.783 7.783 0 0 0-7.78-7.779h-15.557zM45.646 56.647a7.782 7.782 0 0 0 0 11l51.24 51.24a7.782 7.782 0 0 0 11 0l11.001-11a7.783 7.783 0 0 0 0-11.001l-51.24-51.24a7.783 7.783 0 0 0-11 0L45.646 56.648zM230.366 241.36a7.782 7.782 0 0 0 0 11l51.24 51.24a7.782 7.782 0 0 0 11 0l11.001-11a7.783 7.783 0 0 0 0-11.001l-51.24-51.24a7.783 7.783 0 0 0-11 0l-11 11.001zM56.648 303.603a7.782 7.782 0 0 0 11 0l51.24-51.24a7.782 7.782 0 0 0 0-11l-11.001-11.001a7.783 7.783 0 0 0-11 0l-51.24 51.24a7.783 7.783 0 0 0 0 11l11 11.001zM241.368 118.886a7.782 7.782 0 0 0 11 0l51.24-51.24a7.782 7.782 0 0 0 0-11l-11-11a7.783 7.783 0 0 0-11.002 0l-51.24 51.239a7.783 7.783 0 0 0 .001 11l11 11.001z" />
+        </symbol>
+        <symbol id="moon" viewbox="0 0 207 253" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2"><path d="M.007 232.735c67.487 38.963 152.38 18.452 189.46-45.772 37.078-64.221 12.398-148.002-55.089-186.966 22.54 38.886 23.685 100.161-6.052 151.667C98.589 203.17 44.949 232.82.007 232.734z"/></symbol>
+        <symbol id="gear" viewbox="0 0 288 288" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2"><path d="M157.752.674a143.852 143.852 0 0 0-27.823 0l-4.582 22.308a122.267 122.267 0 0 0-25.919 6.945L84.305 12.899A143.785 143.785 0 0 0 60.21 26.81l7.186 21.611a122.245 122.245 0 0 0-18.974 18.974l-21.611-7.186A143.793 143.793 0 0 0 12.9 84.305l17.028 15.122a122.267 122.267 0 0 0-6.945 25.919L.675 129.932c-.899 9.25-.899 18.57 0 27.82l22.308 4.58a122.26 122.26 0 0 0 6.945 25.92L12.9 203.372a143.393 143.393 0 0 0 13.911 24.1l21.611-7.19a122.37 122.37 0 0 0 18.974 18.98l-7.186 21.61a144.333 144.333 0 0 0 24.095 13.91l15.123-17.03a122.399 122.399 0 0 0 25.919 6.95l4.582 22.3c9.253.9 18.571.9 27.823 0l4.583-22.3c8.868-1.36 17.56-3.69 25.919-6.95l15.122 17.03a144.342 144.342 0 0 0 24.096-13.91l-7.186-21.61a122.458 122.458 0 0 0 18.974-18.98l21.611 7.19a143.393 143.393 0 0 0 13.911-24.1l-17.028-15.12a122.26 122.26 0 0 0 6.945-25.92l22.308-4.58c.899-9.25.899-18.57 0-27.82l-22.308-4.586a122.267 122.267 0 0 0-6.945-25.919l17.028-15.122a143.793 143.793 0 0 0-13.911-24.096l-21.611 7.186a122.332 122.332 0 0 0-18.974-18.974l7.186-21.611a143.793 143.793 0 0 0-24.096-13.911l-15.122 17.028a122.267 122.267 0 0 0-25.919-6.945L157.752.674zm-13.911 68.73c41.082 0 74.436 33.353 74.436 74.438 0 41.08-33.354 74.43-74.436 74.43-41.083 0-74.437-33.35-74.437-74.43 0-41.085 33.354-74.438 74.437-74.438z"/></symbol>
+      </svg>
+</head>
+
+<body class="auto">
+    <main>
+        <section class="selector">
+            <div>
+                <input type="radio" id="light" name="theme" value="light">
+                <label for="light"><svg class="icon"><use xlink:href="#sun" /></svg></label>
+            </div>
+            <div>
+                <input type="radio" id="dark" name="theme" value="dark">
+                <label for="dark"><svg class="icon"><use xlink:href="#moon" /></svg></label>
+            </div>
+        </section>
+        <script src="./js/dark.js"></script>
+        <article class="teaser">
+            <h1 class="teaser__heading">Dark Mode gemäß dem Betriebssystem</h1>
+
+            <p>Der Darkmodus wird in diesem Beispiel nur verwendet, wenn er auch vom Betriebssystem des Benutzers verwendet wird. Wenn Sie den Modus des Betriebssystems von dem dunklen Farbschema auf das helle Farbschema ändern, wird auch der Modus der Website
+                auf das helle Farbschema geändert. Sie können die Medienabfrage prefers-color-scheme verwenden, um das Farbschema abzufragen.</p>
+            <img class="image2load" alt="Mann am Computer">
+        </article>
+    </main>
+</body>
+
+</html>

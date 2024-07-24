@@ -1,0 +1,12 @@
+
+/* 
+   Styles für das Beispiel: /Beispiele/Kapitel009/9_1_7/index3.html
+*/
+:target { background: lightgrey; }
+/* mit dem Tag-Selektor kann ich ids unterscheiden, die
+aus unterschiedlichen Tags kommen, aber die gleiche id haben. */
+div#einblenden { display: none; }
+div#einblenden:target { display: block; }
+
+
+

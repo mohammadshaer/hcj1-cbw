@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Klausur">
+    <meta name="description" content="">
+    <meta name="author" content="Mohammad Shaer">
+    <link rel="stylesheet" href="klausur.css" />
+    <title>Klausur</title>
+    <style>
+        .Farbe > p {
+            color: blue;
+
+        }
+        a [traget ="_blank"]{
+             color: red; 
+        }
+        h1 + h2 {
+            color:red ;
+         }
+        .content p {
+             color : yellow  ;
+        }
+        .element {
+            width: 300px;
+            height: 150px;
+            padding: 20px;
+            border: 2px solid black;
+         }
+        .parent {
+            width: 200px;
+            height: 200px;
+            background-color: skyblue;
+            padding: 10px;
+        }
+        .parent-relative div{
+            height:50px ;
+        }
+        .one{
+            background: tomato;
+        }
+        .relative > .two{
+            background: gold;
+            position: relative;
+            top: 10px;
+            left: 30px;
+        }
+
+        .absolute .two{
+            background: gold;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+        }
+        .parent.absolute {
+            position: relative;
+        }
+        .three{
+            background: darkviolet;
+        }
+
+        @media (max-width: 48em) {
+            body {
+                font-size: 20px; /* Größere Schriftgröße bei kleiner Anzeigefläche */
+            }
+        }
+        .resp-webdesigen {
+            padding: 20px;
+            background-color: lightgreen;
+        }
+        @media (max-width: 600px) {
+            .resp-webdesigen {
+                background-color: lightcoral;
+                padding: 10px;
+            }
+        }
+
+        @media (min-width: 601px) and (max-width: 1024px) {
+            .resp-webdesigen {
+                background-color: lightblue;
+                padding: 15px;
+            }
+        }
+        .container {
+            display: flex;
+            justify-content: space-around;
+            background-color: lightgrey;
+            padding: 20px;
+        }
+        .item {
+            background-color: lightblue;
+            padding: 20px;
+            margin: 10px;
+            flex: 1 1 auto;
+            text-align: center;
+        }
+        pre{
+            background-color: black; 
+            color: white;
+            width: 600px;
+        }
+        .element-width{
+            width: 50%;
+            background-color: brown;
+        }
+        .element-background{
+            width: 200px;
+            height: 200px;
+            background-image: radial-gradient(red ,yellow,blue);
+        }
+        .container-vw{
+            width: 80%; /* 80% der Breite des Elternelements */
+            background-color: lightgray;
+            padding: 20px;
+        }
+        .box {
+            width: 50vw; /* 50% der Viewport-Breite */
+            height: 100px;
+            background-color: lightblue;
+            margin-top: 20px;
+        }
+     
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">Klausur HCJ2</h1>
+    <h3>Aufgabe 1: </h3>
+    <ol style="list-style-type: '1 ';">
+        <li>
+          .1 Selektoren in CSS-Code: Auf diese Weise können Sie die Tags angeben, zu denen die CSS-Eigenschaften hinzugefügt werden. 
+           Einfache Selektoren sind Universalselektor, Typselektor, Klassenselektor, ID-Selektor, Attributselektor und Pseudoklassen.
+        </li><br>
+        <li> 
+            .2
+            <pre>
+                .Farbe > p {
+                    color: blue;
+                }
+            </pre>
+            <div class="Farbe">
+                <p>Absatz eins.</p>
+                <section>
+                    <p>Absatz zwei.</p>
+                </section>
+            </div>
+        </li>
+        <li>
+            .3
+            <pre>
+                a [traget ="_blank"]{
+                    color: red;
+                }
+            </pre>
+            <a href="https://fussball.com" target="_blank">Linke 1</a>
+            <a href="https://fussball.com">Link 2</a>
+        </li>
+        <li>
+            .4
+            <pre>
+                h1 + h2 {
+                    color:red ;
+                }
+            </pre>
+            <h1>Überschrift 1</h1>
+            <h2>Unterüberschrift 1</h2>
+            <p>Ein Absatz</p>
+            <h1>Überschrift 2</h1>
+            <h2>Unterüberschrift 2</h2>
+            <h3>Unterüberschrift 3</h3>
+        </li>
+        <li>
+            .5
+            <pre>
+                .content p {
+                    color : yellow ;
+                }
+            </pre>
+            <div class="content">
+                <p>Paragraph in content div .</p>
+            </div>
+            <div>
+                <p>Paragraph in non-content div .</p>
+            </div>
+        </li>
+    </ol>
+    <hr>
+    <h3>Aufgabe 2 </h3>
+    <ol style="list-style-type: '2 ';">
+        <li>
+            .1
+            In CSS gibt es das sogenannte Box-Modell (Kastenmodell).
+             Das Box-Modell ist ein grundlegendes Prinzip, das zum Verständnis von CSS notwendig ist. Prinzipiell werden in CSS alle Elemente als rechteckige Box behandelt. 
+             Jede Box besteht aus :
+             <ol>
+                <li>Inhalt.</li>
+                <li>Innenabstand (padding).</li>
+                <li>rahmen (border) und </li>
+                <li>Ausßenabstand(Margin).</li>
+             </ol> 
+         
+        </li><br>
+        <li>
+            .2
+            Gesamtbreite = Breite des Inhalts + Innenabstände + Rahmen + Außenabstände
+            Rechnung:Gesamtbreite=200px+40px+10px+10px=260px
+        </li><br>
+          <li>
+            .3
+            <pre style="background-color: black; color: white; width: 800px;">
+                &lt;!DOCTYPE html>
+                &lt;html lang="de">
+                    &lt;head>
+                        &lt;meta charset="UTF-8">
+                        &lt;meta name="viewport" content="width=device-width, initial-scale=1.0">
+                        &lt;title>Beispiel&lt;/title>
+                        &lt;style>
+                                .element {
+                                    width: 300px;
+                                    height: 150px;
+                                    padding: 20px;
+                                    border: 2px solid black;
+                                }
+                            &lt;/style>
+                     &lt;/head>
+                    &lt;body>
+                     &lt;div class="element">Inhalt&lt;/div>
+                    &lt;/body>
+                &lt;/html>
+             </pre>
+             <div class="element"></div>
+          </li> <br><br>
+          <li>
+            .4
+            <h4>Beispiel: relative box</h4>
+            <p>Dies ist nützlich, wenn man ein Element leicht verschieben möchte, ohne den Fluss der umliegenden Elemente zu stören.</p>
+            <div class="parent relative">
+                <div class="one">one</div>
+                <div class="two">two</div>
+                <div class="three">three</div>
+            </div>
+            <br><br>
+            <h4>Beispiel: absolute box</h4>
+            <p>Dies ist nützlich, wenn man ein Element exakt an einer bestimmten Position platzieren möchte, ohne den Fluss der umliegenden Elemente zu beeinflussen.</p>
+                <div class="parent absolute">
+                    <div class="one">one</div>
+                    <div class="two">two</div>
+                    <div class="three">three</div>
+                </div>
+            <h5>Unterschied zwischen relative und absolute box </h5>
+            <p>position: relative den Platz des Elements im Fluss, während position: absolute das Element aus dem Fluss entfernt und relativ zu seinem nächsten positionierten Vorfahren oder dem Viewport positioniert.</p>
+          </li>
+    </ol>
+    <hr>
+    <h3>Aufgabe 3 </h3>
+    <ol style="list-style-type: '3 ';">
+        <li>
+            .1
+            Responsives Webdesign : ist ein Ansatz zur Webentwicklung, bei dem Websites so gestaltet und implementiert werden, dass sie auf verschiedenen Geräten und Bildschirmgrößen optimal angezeigt und genutzt werden können. Dies umfasst Desktops, Tablets, Smartphones und andere internetfähige Geräte.
+            Es ist aus folgenden Gründen wichtig :
+            <ol>
+                <li>Verbesserte Benutzererfahrung</li>
+                <li>Erhöhte Reichweite</li>
+                <li>SEO-Vorteile</li>
+                <li>Kosten- und Zeitersparnis</li>
+                <li>Zukunftssicherheit</li>
+            </ol>
+        </li><br>
+        <li>
+            .2
+            <p> <b>Media Query: </b>Wenn die Anzeigefläche unter 48em (circa 768px bei einer Standard-Schriftgröße von 16px) liegt, wird die Schriftgröße auf 20px vergrößert.</p>
+             
+        </li><br>
+        <li>
+            .3
+             <div class="resp-webdesigen">
+                Dieser Container ändert seine Hintergrundfarbe und den Innenabstand basierend auf der Bildschirmgröße.
+             </div>
+        </li><br>
+        <li>
+            .4
+            <h5>In diesem Beispiel werden die Flex-Items (Elemente 1, 2 und 3) innerhalb des Containers gleichmäßig mit gleichen Abständen zwischen ihnen angeordnet.</h5>
+            <div class="container">
+                <div class="item">Element 1</div>
+                <div class="item">Element 2</div>
+                <div class="item">Element 3</div>
+            </div>
+        </li>
+    </ol>
+    <hr>
+    <h3>Aufgabe 4 </h3>
+    <ol style="list-style-type: '4 ';"">
+        <li>
+            .1
+            <h5>Relative Maßeinheiten</h5>
+            <p>Relative Maßeinheiten passen sich dynamisch an das Layout und die Größe anderer Elemente an. Sie sind flexibel und werden häufig in responsive Webdesigns verwendet.</p>
+            <h5>1. em:</h5>
+            <ol style="list-style-type: disc;" >
+                <li>Bedeutung: Eine em-Einheit entspricht der Schriftgröße des übergeordneten Elements. Wenn das übergeordnete Element eine Schriftgröße von 16px hat, entspricht 1em 16px.</li>
+                <li>Beispiel:
+                    <pre>
+                        html {
+                            font-size: 16px;
+                        }
+                        .child {
+                            font-size: 1.5rem; /* 24px */
+                        }
+                    </pre>
+                </li>
+            </ol>
+            <h5>1. rem:</h5>
+            <ol style="list-style-type: disc;" >
+                <li>Bedeutung: Eine rem-Einheit entspricht der Schriftgröße des Root-Elements (normalerweise das <html>-Element). Wenn das Root-Element eine Schriftgröße von 16px hat, entspricht 1rem 16px.</li>
+                <li>Beispiel:
+                    <pre>
+                        html {
+                            font-size: 16px;
+                        }
+                        .child {
+                            font-size: 1.5rem; /* 24px */
+                        }
+                    </pre>
+                </li>
+            </ol>
+            <h5>Relative Maßeinheiten</h5>
+            <p>Absolute Maßeinheiten haben feste Werte, die unabhängig von anderen Elementen sind. Sie sind nützlich, wenn eine genaue Kontrolle über die Größe erforderlich ist.</p>
+            <h5>1. px (Pixel):</h5>
+            <ol style="list-style-type: disc;" >
+                <li>Bedeutung: Ein Pixel ist ein fester Wert und entspricht einem Bildschirmpixel.</li>
+                <li>Beispiel:
+                    <pre>
+                        .box {
+                            width: 100px;
+                            height: 50px;
+                        }
+                    </pre>
+                </li>
+            </ol>
+            <h5>1. in (Inch):</h5>
+            <ol style="list-style-type: disc;" >
+                <li>Bedeutung: Ein Zoll entspricht 96 Pixeln auf einem Bildschirm (1in = 96px).</li>
+                <li>Beispiel:
+                    <pre>
+                        .box {
+                            width: 1in; /* 96px */
+                            height: 0.5in; /* 48px */
+                        }
+                    </pre>
+                </li>
+            </ol>
+        </li><br>
+        <li>
+            .2
+            <h5>Korrigierter Code:</h5>
+            <p>Indem man 50px durch 50% ersetzt, wird sichergestellt, dass die Breite des Elements relativ zur Breite des Elternelements ist, was für flexible und responsive Layouts nützlich ist</p>
+            <pre>
+                .element {
+                    width: 50%;
+                } 
+            </pre>
+            <h4>Beispiel</h4>
+            <div class="element-width">element</div>
+        </li><br>
+        <li>
+            .3
+            <h5> Hintergrundfarbe eines Elements</h5>
+            <p>Hier ist der CSS-Code, um die Hintergrundfarbe eines Elements auf eine Farbe aus dem Farbkreis zu setzen. In diesem Beispiel wird die Farbe "lightcoral" verwendet:</p>
+            <pre>
+                .element-background {
+                    width: 200px;
+                    height: 600px;
+                    background-image: radial-gradient(red ,yellow,blue);
+                } 
+            </pre>
+            <h4>Beispiel</h4>
+            <div class="element-background"></div>
+        </li><br>
+        <li>
+            .4
+            <h4>Um den Unterschied zwischen den CSS-Einheiten vw und % zu verdeutlichen, betrachten wir ein Beispiel mit einem Container und einem darin enthaltenen Element. Hierbei steht vw für "Viewport Width" und % für Prozent.</h4>
+            <h5>Beispiel:</h5>
+            <div class="container-vw">
+                <div class="box">Box</div>
+            </div>
+
+        </li>
+    </ol>
+</body>
+</html>

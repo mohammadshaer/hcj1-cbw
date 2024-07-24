@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Pseudoklassen</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="css/style2.css" />
+</head>
+
+<body>
+    <article>
+        <h1>Test-Überschrift</h1>
+        <p>Dies ist ein Absatz.</p>
+    </article>
+
+
+    <h1>:first-child in body</h1>
+    <p>
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+    </p>
+    
+    <h2>:first-child und :last-child auf Tabelle</h2>
+    <table>
+        <tbody>
+            <tr>
+                <!-- Bei nur einer Spalte wird die Reihenfolge im CSS angewendet?
+                 Bei colspan (Verbinden von mehreren Zellen) ändert sich NICHTS
+                 an der Kind-Logik -->
+                <td>:first-child in tr</td>
+                <td>nur Text</td>
+                <td>:last-child in tr</td>
+            </tr>
+            <tr>
+                <td>:first-child in tr</td>
+                <td>nur Text</td>
+                <td>:last-child in tr</td>
+            </tr>
+        </tbody>
+    </table>
+    <ul>
+        <li>Das wird von :first-child in ul ausgewählt.</li>
+        <li>Das wird nicht ausgewählt.</li>
+        <li>Das wird nicht ausgewählt.</li>
+        <li>Das wird von :last-child in ul ausgewählt.</li>
+    </ul>
+    <p>Das hier wird von :last-child von body ausgewählt.</p>
+
+
+    <article>
+        <p>p in Artikel</p>
+    </article>
+    <p>p nicht in Artikel.</p>
+
+
+    <ul class="spez">
+        <li>Das wird von :first-child in ul ausgewählt.</li>
+        <li>Das wird nicht ausgewählt.</li>
+        <li>Das wird nicht ausgewählt.</li>
+        <li>Das wird von :last-child in ul ausgewählt.</li>
+        <li>Das wird von :first-child in ul ausgewählt.</li>
+        <li>Das wird nicht ausgewählt.</li>
+        <li>Das wird nicht ausgewählt.</li>
+        <li>Das wird von :last-child in ul ausgewählt.</li>
+        <li>Das wird von :first-child in ul ausgewählt.</li>
+        <li>Das wird nicht ausgewählt.</li>
+        <li>Das wird nicht ausgewählt.</li>
+        <li>Das wird von :last-child in ul ausgewählt.</li>
+    </ul>
+
+    <ol class="spez">
+        <li>Das wird von :first-child in ul ausgewählt.</li>
+        <li>Das wird nicht ausgewählt.</li>
+        <li>Das wird nicht ausgewählt.</li>
+        <li>Das wird von :last-child in ul ausgewählt.</li>
+        <li>Das wird von :first-child in ul ausgewählt.</li>
+        <li>Das wird nicht ausgewählt.</li>
+        <li>Das wird nicht ausgewählt.</li>
+        <li>Das wird von :last-child in ul ausgewählt.</li>
+        <li>Das wird von :first-child in ul ausgewählt.</li>
+        <li>Das wird nicht ausgewählt.</li>
+        <li>Das wird nicht ausgewählt.</li>
+        <li>Das wird von :last-child in ul ausgewählt.</li>
+    </ul>
+
+</body>
+
+</html>

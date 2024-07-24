@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Hotelliste</h1>
+    <ul id="hotelList"></ul>
+    <script>
+        // Erstellung eines Arrays mit den Namen von 4 Hotels
+const hotels = ["Hotel Sunshine", "Oceanview Resort", "Mountain Retreat", "City Plaza"];
+
+// Ausgabe der Liste mit for..in Schleife
+console.log("Ausgabe mit for..in Schleife:");
+for (let index in hotels) {
+    console.log(hotels[index]);
+}
+
+// Ausgabe der Liste mit for..of Schleife
+console.log("Ausgabe mit for..of Schleife:");
+for (let hotel of hotels) {
+    console.log(hotel);
+}
+
+// HTML-Ausgabe
+document.addEventListener("DOMContentLoaded", function() {
+    const hotelList = document.getElementById("hotelList");
+
+    // Ausgabe mit for..in Schleife
+    for (let index in hotels) {
+        let listItem = document.createElement("li");
+        listItem.textContent = hotels[index];
+        hotelList.appendChild(listItem);
+    }
+    
+    // Ausgabe mit for..of Schleife
+    // Dies wird hinzugefügt, um den Unterschied zu zeigen, 
+    // normalerweise würde man nicht beide Methoden gleichzeitig verwenden
+    // Für die HTML-Ausgabe sollte eine Schleife reichen
+    for (let hotel of hotels) {
+        let listItem = document.createElement("li");
+        listItem.textContent = hotel;
+        hotelList.appendChild(listItem);
+    }
+});
+
+    </script>
+</body>
+</html>

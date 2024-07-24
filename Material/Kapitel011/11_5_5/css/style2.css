@@ -1,0 +1,21 @@
+.my_article {
+    width: 60%;
+    padding: 5px;
+    border: white 2px solid;
+}
+
+.trans01 {
+    background: radial-gradient(white, orange);
+}
+
+.trans02 {
+    background: radial-gradient( white 30%, orange 70%);
+}
+
+.trans03 {
+    background: repeating-radial-gradient(white, white 10px, orange 10px, orange 20px);
+}
+
+.trans04 {
+    background: repeating-radial-gradient(circle, white, white 10px, orange 10px, orange 20px);
+}

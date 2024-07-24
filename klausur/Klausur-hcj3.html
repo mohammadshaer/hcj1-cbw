@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Klausur">
+    <meta name="description" content="">
+    <meta name="author" content="Mohammad Shaer">
+    <title>klasuer</title>
+    <style>
+        pre{
+            background-color: black; 
+            color: white;
+            width: 800px;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">Klausur HCJ3</h1>
+    <h3>Aufgabe 1: </h3>
+    <ol  id ="liste"style="list-style-type: '1 ';">
+        <li> .1
+            <pre>
+                let isActive = true;
+                let age = 25;
+                console.log("Boolean Variable (isActive):", isActive);
+                console.log("Number Variable (age):", age);
+                
+            </pre>
+        </li><br>
+        <li> 
+            .2
+            Der Debugger ist, ein Tool, mit welchem wir unseren Code analysieren können,
+             um somit im Programm enthaltene Fehler zu beheben. Gefunden werden kann der Debugger ebenfalls in den Webentwickler-Tools
+             Dies ermöglicht es Entwicklern, den aktuellen Zustand der Anwendung zu untersuchen, Variablen zu überprüfen und den Code schrittweise auszuführen.
+        </li><br>
+        <li>
+            .3
+            -Die if..else-Verzweigung wird verwendet, um eine oder mehrere Bedingungen zu prüfen. 
+            Jede Bedingung wird einzeln geprüft, und der Codeblock innerhalb der passenden Bedingung wird ausgeführt.<br>
+            -Der switch-Case wird verwendet, um den Wert einer Variable gegen mehrere mögliche Werte zu prüfen.
+            Jeder mögliche Wert hat einen eigenen Fall (case), und der Codeblock innerhalb des passenden Falls wird ausgeführt.
+             Am Ende jedes Falles steht normalerweise ein break, um zu verhindern, dass die nachfolgenden Fälle ebenfalls ausgeführt werden.
+        </li><br>
+        <li>
+            .4
+            <pre>
+                let hotels = ["The Circus Hotel", "City Center", "ibis Stile", "Hauptbahnhof"];
+                console.log(hotels);
+            </pre>
+        </li>
+        <li>
+            .5
+            <pre>
+                let hotels = ["The Circus Hotel", "City Center", "ibis Stile", "Hauptbahnhof"];
+                Ausgabe mit for..in Schleife
+                for (let x in hotels){
+                    console.log(hotels[x]);
+                    
+                 }
+                 Ausgabe mit for..of Schleife
+                 for (let x of hotels){
+                    console.log(x);
+                    
+                 }
+
+            </pre>
+            <ul id="hotel1"></ul>
+        </li><br>
+        <li>
+            .6
+            JavaScript wird meist am Ende des body-Elements in ein HTML-Dokument eingefügt, 
+            um sicherzustellen, dass das HTML-Dokument vollständig geladen und geparst ist, bevor das Skript ausgeführt wird. 
+        </li><br>
+        <li>
+            .7
+            <pre>
+                function sum(num1,num2){
+                    console.log(num1+num2); 
+                }
+                
+                function minus(num1,num2){
+                    console.log(num1-num2); 
+                }
+                
+                sum(2,2);
+                // Hier: implizite Umwandlung von number in String
+                sum("2",2);  => "22"
+                
+                minus(2,2);
+                // Hier: implizite Umwandlung von String in number
+                minus("2",2); => 0
+             </pre>
+        </li><br>
+        <li>
+            .8
+            Der Operator && in JavaScript ist der logische UND-Operator. 
+            Er wird verwendet, um zwei Bedingungen zu verknüpfen. 
+            Der &&-Operator gibt einen Wert zurück, der auf der Bewertung der beiden Operanden basiert.
+             Es gibt verschiedene Szenarien für den Einsatz von &&:
+        </li>
+    </ol>
+    <hr>
+    <h3>Aufgabe 2 </h3>
+    <div class="container">
+        <h2>Einkaufsliste</h2>
+        <input type="text" id="Input" placeholder="Artikel hinzufügen">
+        <button onclick="addItem()">Hinzufügen</button>
+        <ul id="List"></ul>
+    </div>
+    <hr>
+    <h3 id ="pool">Aufgabe 3 </h3>
+    <pre>
+        const pool = {
+            Groesse_m2: 500,
+            kapazitaet: 100, 
+            wassertemperatur: 28, 
+            besucher: 0,
+ 
+            come: function(anzahl) {
+                if (this.besucher + anzahl > this.kapazitaet) {
+                    console.log("Der Bademeister wird nervös! Keine weiteren Gäste können eintreten.");
+                } else {
+                    this.besucher += anzahl;
+                    console.log(anzahl + " Gäste sind gekommen. Aktuelle Besucherzahl: " + this.besucher);
+                }
+            },
+            leave: function(anzahl) {
+                if (this.besucher - anzahl < 0) {
+                    console.log("Es sind nicht genug Besucher im Pool, um " + anzahl + " Gäste zu entfernen.");
+                } else {
+                    this.besucher -= anzahl;
+                    console.log(anzahl + " Gäste sind gegangen. Aktuelle Besucherzahl: " + this.besucher);
+                }
+            }
+        };
+        pool.come(30);
+        pool.come(90);
+        pool.leave(15);
+        pool.leave(100);
+    </pre>
+    <script>
+                let hotels = ["The Circus Hotel", "City Center", "ibis Stile", "Hauptbahnhof"];
+                console.log(hotels);
+                document.addEventListener("DOMContentLoaded", function() {
+                let item = document.getElementById("hotel1");
+                let txt = document.createTextNode("Ausgabe mit for..in Schleife")
+                item.appendChild(txt);
+                for (let x in hotels){
+                  let listItem = document.createElement("li");
+                  listItem.textContent= hotels[x];
+                  item.appendChild(listItem);
+                }
+                let txt1 = document.createTextNode("Ausgabe mit for..of Schleife")
+                item.appendChild(txt1);
+                for (let x of hotels){
+                  let listItem = document.createElement("li");
+                  listItem.textContent= x;
+                  item.appendChild(listItem);
+                }
+            })
+            function addItem() {
+            var input = document.getElementById('Input');
+            var itemText = input.value;
+
+            if (itemText !== '') {
+                var ul = document.getElementById('List');
+                var li = document.createElement('li');
+                li.appendChild(document.createTextNode(itemText));
+                ul.appendChild(li);
+                input.value = ''; 
+            } else {
+                alert('Bitte einen Artikel eingeben.');
+            }
+        }
+        const pool = {
+    Groesse_m2: 500, 
+    kapazitaet: 100, 
+    wassertemperatur: 28, 
+    besucher: 0, 
+
+    come: function(anzahl) {
+        let item1 = document.getElementById("pool");
+        if (this.besucher + anzahl > this.kapazitaet) {
+            let txt2 = document.writeln("Der Bademeister wird nervös! Keine weiteren Gäste können eintreten.")
+             item1.appendChild(txt2);
+              
+            // console.log("Der Bademeister wird nervös! Keine weiteren Gäste können eintreten.");
+        } else {
+            this.besucher += anzahl;
+            let txt2 = document.writeln("Der Bademeister wird nervös! Keine weiteren Gäste können eintreten."+ this.besucher)
+            item1.appendChild(txt2);
+            // console.log(anzahl + " Gäste sind gekommen. Aktuelle Besucherzahl: " + this.besucher);
+        }
+    },
+    leave: function(anzahl) {
+        let item2 = document.getElementById("pool");
+        if (this.besucher - anzahl < 0) {
+            let txt2 = document.writeln("Es sind nicht genug Besucher im Pool, um"+ anzahl + " Gäste zu entfernen.")
+            item1.appendChild(txt2);
+            // console.log("Es sind nicht genug Besucher im Pool, um " + anzahl + " Gäste zu entfernen.");
+        } else {
+            this.besucher -= anzahl;
+            let txt2 = document.writeln(anzahl + " Gäste sind gegangen. Aktuelle Besucherzahl: " + this.besucher)
+            item1.appendChild(txt2);
+            
+            // console.log(anzahl + " Gäste sind gegangen. Aktuelle Besucherzahl: " + this.besucher);
+        }
+    }
+};
+pool.come(30);
+pool.come(90);
+pool.leave(15);
+pool.leave(100);
+    </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Dark Mode mit dem Betriebssystem</title>
+    <meta charseth="UTF-8" />
+    <meta lang="de" />
+    <meta name="viewport" content="width:device-width, initial-scale:1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body class="auto">
+    <main>
+        <article class="teaser">
+            <h1 class="teaser__heading">Dark Mode gemäß dem Betriebssystem</h1>
+
+            <p>Der Darkmodus wird in diesem Beispiel nur verwendet, wenn er auch vom Betriebssystem des Benutzers verwendet wird. Wenn Sie den Modus des Betriebssystems von dem dunklen Farbschema auf das helle Farbschema ändern, wird auch der Modus der Website
+                auf das helle Farbschema geändert. Sie können die Medienabfrage prefers-color-scheme verwenden, um das Farbschema abzufragen.</p>
+            <picture>
+                <source srcset="./image/dark.png" media="(prefers-color-scheme: dark)">
+                <img src="./image/light.png" alt="">
+            </picture>
+        </article>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,19 @@
+body {
+    margin: 0;
+}
+
+.navbar {
+    background-color: limegreen;
+    list-style-type: none;
+    margin: 0;
+}
+
+.navbar li {
+    /* Block-Elemente nebeneinander anordnen
+    Sorgt dafür, dass die list items nebeneinander stehen können. */
+    display: inline-block;
+    /* Es bietet sich an, mit einer relativen, einheitlichen Einheit
+    zu arbeiten für Abstände und Schriftgrößen. */
+    padding: 1em;
+    font-size: 1.25em;
+}

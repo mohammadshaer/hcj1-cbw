@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+        box-sizing: border-box;
+        width: 40em;
+        height: 40em;
+        padding: 25px;
+        border: 3px solid blue;^
+        /* Für diese Box Höhe und Breite ausrechnen, einmal im klassischen Box-Modell, 
+        einmal im alternativen Box-Modell UND einmal nur den Inhaltsbreite und Inhaltshöhe im alternativen Box-Modell */
+        /* Klassiche:
+            Breite: 200px + padding left: 25px + padding right:25px + border left: 3px + border right:3px = 256px            
+            
+            Höhe: 100px + padding left: 25px + padding right:25px + border left: 3px + border right:3px = 156px    */
+            /* Inhaltsbreite = 200px - 25px - 25px - 3px - 3px = 144px
+             Inhaltshöhe = 100px - 25px - 25px - 3px - 3px = 44px */
+}
+
+    </style>
+</head>
+<body>
+    <div>
+        <h1>element</h1>
+    </div>
+</body>
+</html>

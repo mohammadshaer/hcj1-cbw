@@ -1,0 +1,11 @@
+article {
+    width: 70%;
+}
+
+.word {
+    background-color: antiquewhite;
+    width: 150px;
+    padding: 25px;
+    border: 20px solid orange;
+    margin: 20px;
+}

@@ -1,0 +1,28 @@
+
+/* 
+   Styles für das Beispiel: /Beispiele/Kapitel009/9_1_7/index.html
+*/
+a {
+   font-family: 'Courier New', Courier, monospace;
+}
+
+a:link { color: red; }
+a:visited { color: green; }
+
+/* Unterschiede a und a :link? */
+/* a wird verwendet, um allgemeines Styling von einem spezfischen Stying unbesuchter
+Links zu unterscheiden. */
+
+/* any-link kann wiefolgt formuliert werden: */
+/* a:link, a:visited {
+   color: grey;
+} */
+
+/* Nachfahrenselektor */
+/* Wir schauen nur nach Links in den Nachkommen der Elemente, die die Klasse
+articlestyle haben.  */ 
+.articlestyle a:any-link { color: grey; }
+/* Chrome und Opera */
+.articlestyle a:-webkit-any-link { color: grey; }
+
+

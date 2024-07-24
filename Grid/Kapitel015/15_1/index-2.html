@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="utf-8">
+    <title>HTML-Grundgerüst</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/layout-2.css">
+</head>
+
+<body>
+    <div class="grid">
+        <header class="header">
+            <picture class="img-logo">
+                <source media="(min-width: 1023px)" srcset="grafik/logo-desktop.jpg 1x,grafik/logo-desktop-HD.jpg 2x">
+                <source media="(min-width: 639px)" srcset="grafik/logo-tablet.jpg 1x,grafik/logo-tablet-HD.jpg 2x">
+                <source srcset="grafik/logo-smartphone.jpg 1x,grafik/logo-smartphone-HD.jpg 2x">
+                <!-- Fallback für Browser die kein <picture> können -->
+                <img src="grafik/logo.jpg" alt="Logo" class="img-logo">
+            </picture>
+        </header>
+        <nav class="nav">
+            <ul class="nav-ul">
+                <li class="nav-li"><a href="#" title="dummy" class="nav-li-a">Startseite</a></li>
+                <li class="nav-li"><a href="#" title="dummy" class="nav-li-a">Portfolio</a></li>
+                <li class="nav-li nav-active"><strong class="nav-li-a">Blog</strong></li>
+                <li class="nav-li"><a href="#" title="dummy" class="nav-li-a">Kontakt</a></li>
+                <li class="nav-li"><a href="#" title="dummy" class="nav-li-a">Impressum</a></li>
+            </ul>
+        </nav>
+        <main class="content">
+            <article class="article">
+                <h2>Computergeschichte(n)</h2>
+                <p><img src="grafik/cover-1.png" alt="Cover" class="img-art">Zuse, IBM, Atari, Browserkrieg: Wenn Sie bei diesen Namen in Nostalgie schwelgen oder von der Entdeckerlust gepackt werden, dürfen Sie sich auf dieses Buch freuen. Lassen Sie sich
+                    in dieser Computergeschichte auf eine spannende Reise mitnehmen! Erleben Sie die Entwicklung der Computer, vom gigantischen Rechnerklotz, der einen ganzen Raum ausfüllt, bis zum smarten Hosentaschengerät. Erfahren Sie, wie der Millennium-Bug
+                    die Welt in Hysterie versetzte, und staunen Sie, wie jahrhundertealte Verschlüsselungstechniken noch heute die Programmierwelt beeinflussen. </p>
+            </article>
+            <article class="article">
+                <h2>Capture One 20</h2>
+                <p><img src="grafik/cover-2.png" alt="Cover" class="img-art">Sie wollen Ihren Bildbestand mit Capture One Pro 20 organisieren, entwickeln und präsentieren? Jürgen Wolf zeigt Ihnen Schritt für Schritt, wie Sie Capture One effizient einsetzen
+                    und Ihren fotografischen Praxis-Workflow mit der Software aufbauen. In über 100 Workshops lernen Sie u. a., wie Sie eine Session oder einen Katalog starten, Ihre Bilder sinnvoll archivieren und verwalten, Raw-Bilder bearbeiten und
+                    Ihre Fotografien ansprechend veröffentlichen und drucken. Natürlich wird auch ausführlich auf die Import-Funktion von Lightroom-Katalogen eingegangen!</p>
+            </article>
+            <article class="article clear">
+                <h2>Grundkurs C</h2>
+                <p><img src="grafik/cover-3.png" alt="Cover" class="img-art">Die kompakte Einführung in die C-Programmierung im praktischen Taschenbuchformat. In diesem Grundkurs finden Sie alles, was Sie zur Programmiersprache C wissen müssen, aktuell zum
+                    Standard C18. Die Autoren erklären die Sprachgrundlagen kurz und übersichtlich, bevor sie zu komplexeren Themen übergehen. Am Ende jedes Kapitels können Sie Ihr Wissen in Übungsaufgaben testen und Ihre Antworten mit den kommentierten
+                    Lösungen vergleichen. Viele Codebeispiele und Tabellen sowie eine Funktionsreferenz machen das Buch zum nützlichen Begleiter für Studium und Ausbildung.</p>
+            </article>
+            <article class="article">
+                <h2>Shellprogrammierung</h2>
+                <p><img src="grafik/cover-4.png" alt="Cover" class="img-art">Die Shell-Programmierung ist das Fundament jedes Linux-Anwenders und System-Administrators. Wer die Kommandozeile sowie die wichtigsten Builtins und Werkzeuge beherrscht, der verwaltet
+                    Linux-Systeme weitaus flexibler. Dieses Handbuch bietet Ihnen alles, was Sie zur Shell-Programmierung benötigen, um eigene Shellscripts zu erstellen. Dank der umfangreichen Linux-UNIX-Referenz ist das Buch auch perfekt zum Nachschlagen
+                    aller grundlegenden Terminal-Kommandos geeignet. Praxisbeispiele sowie Übungen mit Lösungen unterstützen Sie zusätzlich beim Lernen und bei der täglichen Arbeit in der Shell.</p>
+            </article>
+        </main>
+        <aside class="aside">
+            <h3>Über den Autor</h3>
+            <p><img src="grafik/me.jpg" alt="Cover" class="img-side">Jürgen Wolf ist renommierter Fachbuchautor und hat sich früh durch seine Standardwerke zu C und C++ einen Namen gemacht. In der Linux-Welt fühlt er sich ebenso zu Hause und überzeugt mit
+                seinen Programmier-Handbüchern. Darüber hinaus widmet er sich leidenschaftlich der digitalen Bildbearbeitung und überzeugt durch seine didaktischen Fähigkeiten. Es zeigt sich sein vielseitiges Talent sich zwischen den Welten von Programmierern
+                und Grafikern zu bewegen und sein Wissen adäquat zu vermitteln. </p>
+            <p> 2002 begann Jürgen Wolf mit dem Schreiben von IT-Büchern. Damals arbeitete er noch als Softwareentwickler. Heute widmet er sich ganz dem Schreiben seiner Fachbücher. Der Erfolgsautor wurde 1974 in Augsburg geboren. Er lebt heute in der Nähe
+                seines Geburtsortes. In seiner Freizeit beschäftigt er sich intensiv mit digitaler Fotografie. </p>
+        </aside>
+        <footer class="footer">
+            Fußzeile - &copy;&nbsp;2021
+        </footer>
+    </div>
+</body>
+
+</html>

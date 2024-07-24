@@ -1,0 +1,24 @@
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 6rem;
+    max-width: 42rem;
+    gap: 1rem;
+    background: #e7eefc;
+    margin-bottom: 4px;
+    align-items: start;
+}
+
+.item,
+.item2 {
+    flex: 0 0 18%;
+    background-color: white;
+    border: solid 1px lightgray;
+    padding: 10px;
+    text-align: center;
+    font-size: smaller;
+}
+
+.item2 {
+    align-self: center;
+}

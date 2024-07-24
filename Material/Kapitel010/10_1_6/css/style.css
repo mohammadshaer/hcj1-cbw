@@ -1,0 +1,43 @@
+/* für alle body elemente
+bis zur Überschreibung durch Element mit höhere
+Spezifizitöt */
+body {
+    background: gray;
+    font-family: Arial, Verdana;
+    color: white;
+}
+
+article {
+    border: 4px inset darkgray;
+    padding: 5px;
+    background: lightgray;
+    color: black;
+}
+
+p {
+    /* border: inherit; */ 
+
+    /* Rand und Padding werden auf inital zurückgesetzt,
+    color übernommen. */
+    all : unset;
+    /* background: lightblue; */
+    /* Zurücksetzen von Eigenschaften, die NICHT vererbbar
+    sind, auf einen Standardwert (initial).
+    Bei vererbbaren Eigenschaften wird dieses 
+    auf inherit gesetzt */
+    /* color: unset; */
+}
+
+.p_outside {
+    /* Alle Eigenschaften werden auf den 
+    Browser-Standard zurückgesetzt (initial).
+    Vererbung wird rückgängig gemacht für ALLE
+    Eigenschaften.
+    all (alle Eigenschaften betrachten) */
+    all: initial;
+    display: block;
+    padding: 3px;
+    margin: 5px;
+    color: silver;
+    background-color: #e03943;
+}

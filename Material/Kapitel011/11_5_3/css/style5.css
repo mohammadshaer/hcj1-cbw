@@ -1,0 +1,9 @@
+h1 {
+    margin: 0;
+}
+
+.article01 {
+    width: 70%;
+    padding: 20px;
+    background: url('../bilder/rose-links-oben.png') top left no-repeat, url('../bilder/rose-rechts-unten.png') bottom right no-repeat, white;
+}

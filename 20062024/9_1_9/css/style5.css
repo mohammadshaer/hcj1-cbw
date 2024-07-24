@@ -1,0 +1,3 @@
+/* wir durchsuchen das HTML und nehmen nur die Elemente fürs Styling, 
+wenn es das EINZIGE innerhalb einer Struktur ist. */
+em:only-of-type { font-weight: bold; }

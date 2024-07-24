@@ -1,0 +1,28 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+.article_01 {
+    width: 70%;
+    margin: 0 auto;
+    padding: 10px 0;
+    padding-right: 25px;
+    border-top: 4px solid black;
+    background-color: lightgray;
+}
+
+.article_02 {
+    inline-size: 70%;
+    /* Zentrierung mit Seitenabständen auf den Wert auto */
+    margin-inline: auto;
+    padding-block: 10px;
+    padding-inline-end: 25px;
+    border-block-start: 4px solid black;
+    background-color: lightgray;
+}

@@ -1,0 +1,59 @@
+/* Der Universal-Selektor legt für ALLE Elemente des HTMl-Files
+ein Styling fest. 
+Spezifischere Stylings überschreiben dieses Element. 
+Bitte beim Refresh Strg gedrückt halten (Browser-Cache). */
+* {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border: 2px solid red;
+} 
+
+/*
+body {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    /* Es gibt Eigenschaften in CSS, die NICHT automatisch auf die Kindelemente übergehen.
+    Dazu zählen z.B. borders und backgrounds 
+    border: 2px solid red;
+} */
+
+
+#cards {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    width: 25%;
+    margin: 10px;
+    padding: 5px;
+}
+
+.img-card {
+    width: 100%;
+}
+
+
+/* Bei Styles auf einer Ebene wird die Reihenfolge der Definition im CSS File 
+abgearbeitet. Wenn es noch ein inline-Style Tag gibt, wird dieses zum Styling verwendet. */
+.card-text {
+    font-size: 2.5vw;
+    text-align: center;
+    border: 10px solid black;
+    /* font-family: 'Times New Roman', Times, serif; */
+}
+
+.claus {
+    border: 5px solid maroon;
+}
+
+article.card-text {
+    color: #393939;
+}
+
+.card-text.bold {
+    font-weight: bold;
+}
+
+
+

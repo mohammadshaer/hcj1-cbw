@@ -1,0 +1,14 @@
+.article_01 {
+    width: 600px;
+    padding: 5px;
+    border: 1px solid black;
+    background-color: sandybrown;
+    margin: 5px 0px;
+}
+
+.article_02 {
+    width: 578px;
+    padding: 15px;
+    border: 2px solid sienna;
+    background-color: antiquewhite;
+}

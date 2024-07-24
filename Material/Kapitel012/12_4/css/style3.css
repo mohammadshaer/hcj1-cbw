@@ -1,0 +1,24 @@
+    h1 {
+        padding-left: 1em;
+    }
+    
+    .float-left {
+        float: left;
+        margin: 0 1rem 1rem 0;
+    }
+    
+    .article-bg {
+        background-color: rgb(186, 203, 220);
+        border: 2px solid black;
+        width: 70%;
+        padding: 1em;
+        display: flow-root;
+    }
+    
+    figcaption {
+        text-align: center;
+        font-style: italic;
+        font-size: 0.7em;
+        background-color: white;
+        padding: 0.5em;
+    }

@@ -1,0 +1,94 @@
+body {
+    margin: 0px;
+    font-family: arial;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 75em;
+    margin: 0 auto;
+    padding: 0 10px 0 10px;
+}
+
+#navbar {
+    background: linear-gradient(rgba(25, 25, 25, 1), rgba(50, 50, 50, 1), rgba(25, 25, 25, 1));
+    position: sticky;
+    top: 0;
+}
+
+#navbar .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+#navbar .logo {
+    color: white;
+    margin-left: 20px;
+}
+
+#navbar .container ul {
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+}
+
+#navbar .container ul li {
+    list-style: none;
+}
+
+#navbar .container ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 15px 20px;
+    margin: 0px 5px;
+    border-radius: 5px;
+}
+
+#navbar .container ul li a:hover {
+    background-color: limegreen;
+    color: #000 !important;
+}
+
+@media (max-width: 48em) {
+    #navbar {
+        height: 120px;
+    }
+    #navbar .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    #navbar ul li a {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 30em) {
+    #navbar {
+        height: 270px;
+    }
+    #navbar ul {
+        display: flex;
+        flex-direction: column;
+    }
+    #navbar ul li {
+        margin-bottom: 20px !important;
+        align-self: center;
+    }
+    #navbar ul li a {
+        padding: 10px 15px !important;
+    }
+    #navbar .logo {
+        margin-left: 0px;
+    }
+}
+
+section {
+    height: 100vh;
+    padding: 20px;
+    margin: 0 20px;
+}

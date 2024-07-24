@@ -1,0 +1,37 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+.head,
+.foot {
+    width: 85%;
+    border: gray 1px solid;
+    padding: 10px;
+    background-color: white;
+    text-align: center;
+    box-shadow: 2px 2px 2px gray;
+}
+
+.head {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.foot {
+    border-radius: 0px 0px 10px 10px;
+}
+
+.article01 {
+    width: 85%;
+    padding: 20px 50px;
+    margin: 10px 0px;
+    border: gray 1px solid;
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px gray;
+}

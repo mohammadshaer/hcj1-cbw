@@ -1,0 +1,41 @@
+/* 
+   Styles für das Beispiel: /Beispiele/Kapitel009/9_1_7/index2.html
+*/
+
+input {
+    background-color: lightgray;
+}
+
+input:focus {
+    background-color: white;
+}
+
+input:hover {
+    box-shadow: 0 0 3px blue;
+}
+
+li {
+    background-color: lightgray;
+    list-style-type: none;
+}
+
+li:hover {
+    background-color: darkgrey;
+}
+
+li:active {
+    background-color: gray;
+}
+
+a:link {
+    text-decoration: none;
+    color: blue;
+}
+
+a:hover {
+    font-weight: bold;
+}
+
+a:active {
+    color: red;
+}

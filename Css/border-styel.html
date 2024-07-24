@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .dotted { 
+            border-style: dotted;
+        }
+        
+        .dashed {
+            border-style: dashed;
+        }
+        
+        .solid {
+            border-style: solid;
+        }
+        
+        .double {
+            border-style: double;
+        }
+        
+        .groove {
+            border-style: groove
+        }
+        
+        .ridge {
+            border-style: ridge;
+        }
+        
+        .inset {
+            border-style: inset;
+        }
+        
+        .outset {
+            border-style: outset;
+        }
+        
+        .none {
+            border-style: none;
+        }
+        
+        .hidden {
+            border-style: hidden;
+        }
+        .mix {
+            border-style: solid double;
+        }
+        .mix1{
+            border-style: solid double dotted;
+        }
+        .mix2{
+            border-style: solid double dotted none;
+        }
+        .one {
+            border-style: double;
+            border-width: 5px;
+        }
+
+        .two {
+            border-style: solid;
+            border-width: medium;
+        }
+
+        .three {
+            border-style: dotted;
+            border-width: thick;
+        }
+        .one1 {
+            border-style: solid;
+            border-color: red;
+        }
+        .demo {
+            border: 3px solid red;
+            border-radius: 20px;
+        }
+                </style>
+            </head>
+            <body>
+                <!-- dotted, um Ränder als Punkte anzuzeigen.
+                 dashed, um Ränder als gestrichelte Linie anzuzeigen.
+                 solid, um Ränder als Linie anzuzeigen.
+                 double, um Ränder als doppelte Linie anzuzeigen.
+                 groove, um Ränder in dreidimensionaler Form anzuzeigen und als wären sie eine Nute.
+                 ridge, um Ränder in drei Dimensionen anzuzeigen und als wären sie vertice.
+                 inset, um Ränder in drei Dimensionen anzuzeigen und als ob sie Licht von der Unterseite nach rechts hätten.outset, um Ränder in drei Dimensionen anzuzeigen und als ob sie Licht von oben nach links hätten. -->
+                <h2>CSS border-style</h2>
+                <p class="dotted">dotted borders</p><br>
+                <p class="dashed">dashed borders</p><br>
+                <p class="solid">solid borders</p><br>
+                <p class="double">double borders</p><br>
+                <p class="groove">groove borders</p><br>
+                <p class="ridge">ridge borders</p><br>
+                <p class="inset">inset borders</p><br>
+                <p class="outset">outset borders</p><br>
+                <p class="none">none borders</p><br>
+                <p class="hidden">hidden borders</p><br>
+                <p><h2>CSS border-style mit zwei value</h2></p>
+                <p class="mix">
+                    Durchgehender Rand oben und <br>
+                     Gepunkteter Rand links und rechts.
+                </p><br>
+                <p><h2>CSS border-style mit drei value</h2></p>
+                <p class="mix1">
+                    Durchgehender Rand oben.<br>
+                     Doppelte Ränder links und <br>
+                      Gepunkteter Rand unten.
+                </p><br>
+                <p><h2>CSS border-style mit vier value</h2></p>
+                <p class="mix2">
+                    Durchgehender Rand oben.<br>
+                     Doppelter Rand auf der rechten Seite. <br>
+                     Gepunkteter Rand unten. <br>
+                     Keine Grenzen auf der linken Seite.<br>
+                </p><br>
+                <h2>CSS border-width</h2>
+                <p class="one">double 5px</p>
+                <p class="two">solid medium</p>
+                <p class="three">dotted thick</p><br>
+                <h2>CSS border-color</h2>
+                <p class="one1">Red borders</p><br>
+                <h2>CSS border-radius</h2>
+                <p class="demo">Border radius 20px on all corners</p>
+            </body>
+        </html>

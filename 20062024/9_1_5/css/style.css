@@ -1,0 +1,21 @@
+/*[title] {
+    text-decoration: none;
+    font-weight: 800;
+    color: blue;
+}*/
+
+/* Selektiert ALLE HTML-Elemente, für die ein 
+title-Attribut vorhanden ist.  */
+[title] {
+    text-decoration: none;
+    font-weight: 800;
+    color: blue;
+}
+
+/* Selektiert ALLE HTML-Elemente vom Typ a, für die ein 
+title-Attribut vorhanden ist.  */
+/* a[title] {
+    text-decoration: none;
+    font-weight: 800;
+    color: blue;
+} */

@@ -1,0 +1,8 @@
+.sticky_h2 {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0px;
+    width: 100%;
+    background-color: black;
+    color: white;
+}

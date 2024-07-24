@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schule</title>
+</head>
+<style>
+.logo{
+    display: flex;
+    justify-content: flex-start;
+    width: 100px;
+    height: 100px;
+}
+.head{
+    margin: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.main{
+    background-color: rgba(48, 48, 126, 0.915);
+    display: flex;
+    justify-content: space-around;
+
+}
+.main > a {
+    color: aliceblue;
+    text-decoration: none;
+    margin: 10px;
+    font-size: 24px;
+    text-align: center;
+}
+h1{
+    color: cornflowerblue;
+}
+.beschriebung{
+    font-family: 'Lato', Sans-Serif;
+    color: #5a5a5a;
+    font-size: 16px;
+    font-weight: 400;
+    background: #F6F6F6;
+}
+.format{
+    font-family: 'Lato', Sans-Serif;
+    color: #5a5a5a;
+    font-size: 16px;
+    font-weight: 400;
+    background: #F6F6F6;
+    text-align: center;
+}
+.Impressum {
+    background-color: blue;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.Impressum >div{
+    line-height: 50px;
+    font-size: 24px;
+    text-align: center;
+}
+</style>
+<body>
+    <thead>
+        <div class="head">
+            <div class="logo">
+                <img src="../images/cbw-college-logo.png" alt="">
+            </div>
+            <div>
+                <h5 style="color: blue;">SIE HABEN FRAGEN? WIR BERATEN SIE GERNE </h5>
+                <h6 style="font-family: 'Times New Roman', Times, serif;">MO - DO 8:00 - 18:00 | FR 8:00 - 16:30 UHR</h6>
+            </div>
+        </div>
+        <div class="main">
+            <a href="#Home">Home</a>
+            <a href="#Fächer">Fächer</a>
+            <a href="#Impressum">Impressum</a>
+        </div>
+    </thead>
+    <tbody>
+        <img src="../images/JHP_0893_CBW_College_300dpi_1600px.jpg" alt="" width="100%" height="100%">
+        <div id="Home"></div>
+            <h5 style="text-align: center; font-size: 20px; background-color: brown;box-sizing: border-box;">Home</h5>
+            <h1>Weiterbildung & Umschulung in Hamburg</h1>
+            <h3>Weiterbildung & Umschulung in Hamburg</h3>
+            <h4>Know-how für die Jobs von morgen!</h4>
+            <div class="beschriebung">
+                <p>CBW bietet Ihnen an seinem Standort in Hamburg (direkt an der S-Bahn Hammerbrook) ein breit gefächertes Angebot an Umschulungen, modularen Weiterbildungen und Sprachkursen. Unsere Angebote sind nach AZAV zertifiziert und damit über Bildungsgutscheine oder AVGS zu 100% förderbar. In einem unverbindlichen Beratungsgespräch finden wir gemeinsam mit Ihnen genau die Weiterbildung/Umschulung, die perfekt zu Ihnen passt.</p>
+                <br>
+                <p>In Abendkursen und offenen Seminaren bieten wir Ihnen die Möglichkeit, Ihre Kenntnisse aufzufrischen, zu erweitern oder zu vertiefen</p>
+                <br>
+                <p>Unternehmen können bei CBW individuelle, bedarfsgerechte und maßgeschneiderte Seminare buchen.</p>
+                <br>
+                <p>Selbstverständlich ist CBW auch nach DIN EN ISO 9001:2015 zertifiziert.</p>
+            </div>
+        </div>
+        <br>
+        <div id="Fächer">
+            <h5 style="text-align: center; font-size: 20px; background-color: brown;box-sizing: border-box;">Fächer</h5>
+            <table class="format" border="1" width="100%" height="150">
+                <br>
+                <tr>
+                    <th>Fach</th>
+                    <th>Lehrer</th>
+                    <th>Beschreibung</th>
+                </tr>
+                <tr>
+                    <td>
+                        Html
+                    </td>
+                    <td>
+                        Matthias Hofmann
+                    </td>
+                    <td>
+                        Struktur und Inhalt einer Webseite
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        CSS
+                    </td>
+                    <td>
+                        Matthias Hofmann 
+                    </td>
+                    <td>
+                        Formatierung und das Design von Webseiten, ermöglicht es, 
+                        zusätzliche Eigenschaften für die Strukturelemente zu vergeben. 
+                        Zum Beispiel: Farben, Größen, Abstandsformatierungen, Schriftarten, Ränder,
+                        Elemente für responsives Webdesign, u.v.m.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        JavaScript
+                    </td>
+                    <td>
+                        Matthias Hofmann
+                    </td>
+                    <td>
+                        Ermöglicht die Implementierung einer "dynamischen" Webseite. 
+                        "Logik" einer Webseite: Beispiel Produktliste => Detailansicht
+                        Nachladen ohne Verzögerung / Anfrage an den Server
+                        JavaScript ist eine Programmiersprache, die auf dem Client im Broswer
+                        ausgeführt wird. Laufzeitumgebung ist der Browser
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <br><br>
+        <tfoot >
+            <h5 style="text-align: center; font-size: 20px; background-color: brown;box-sizing: border-box;">Impressum</h5>
+            <div id="Impressum" class="Impressum">
+                <div><img src="../images/fingerprint-finger-print.jpg" alt="" style=" width:50px;height: 50px;border: radius 50%; "></div>
+                <div>Impressum</div>
+                <div>Datenschutz</div>
+                <div>CBW CLLEGE BERUFLICHE WEITERBILDUNG GMBH</div>
+
+            </div>
+        </tfoot>
+    </tbody>
+</body>
+</html>

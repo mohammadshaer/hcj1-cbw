@@ -1,0 +1,26 @@
+p::first-line {
+    font-weight: bold;
+}
+
+p::first-letter {
+    font-size: xx-large;
+    float: left;
+}
+
+h1::selection {
+    background-color: orange;
+    color: red;
+}
+
+/* Pflegt in das innerHTML von td Elementen mit
+der Klasse zeit einen weiteren Content ein.
+Nützlich für Icons in UTF-8.
+In den content können wir keine HTML-Tags einpflegen. */
+td.zeit::before {
+    content: "♣ ";
+    color: green;
+}
+
+td.zeit::after {
+    content: " Minuten";
+}

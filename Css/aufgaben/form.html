@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input[required]{
+            border: 1 solid blue;
+
+        }
+        h1::first-letter{
+            font-size: 50px;
+            color: red;
+        }
+        h1::selection{
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <h1>Personal Information</h1>
+        <table>
+            <tr>
+                <td>
+                    <label for="name">Name
+                    </label><br>
+                    <input type="text" name="name" id="name" required>
+                </td>
+                <td><label for="geb">Vorname
+                    </label><br>
+                    <input type="text" name="vn" id="vn" required>
+                </td>
+            </tr>
+            <tr>
+        </table>
+    </form>
+</body>
+</html>
